@@ -176,7 +176,7 @@
              // $("#MenuBackground").hide();
             //$('#Menu').css("width", Width + "px");
             $('#kontakt').html('Recke-El ApS  <a href="tel:62 26 10 18">62 26 10 18</a>  <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a> ');
-            $('#test2').html('<nav class="nav-main"><a id="kontakt-os" href="kontakt-os.html">Kontakt</a><a> &#183; </a><a id="led" href="led.html">Ekspert i Led belysning</a><a> &#183; </a><a> &#183; </a><a id="om-os" href="om-os.html">Om os</a><a> &#183; </a><a href="http://www.recke-el.dk">Forside</a></nav>');
+            $('#test2').html('<nav class="nav-main"><a id="kontakt-os" href="kontakt-os.html">Kontakt</a><a> &#183; </a><a id="led" href="led.html">Ekspert i Led belysning</a><a> &#183; </a><a> &#183; </a><a id="om-os" href="om-os.html">Om os</a><a> &#183; </a><a href="/">Forside</a></nav>');
             menuSelected();
 
         }
@@ -189,7 +189,7 @@
 
 
 
-            $('#test2').html('<nav class="nav-main"><a id="kontakt-os" href="kontakt-os.html">Kontakt</a><a> &#183; </a><a id="led" href="led.html">Ekspert i Led belysning</a><a> &#183; </a><a id="om-os" href="om-os.html">Om os</a><a> &#183; </a><a href="http://www.recke-el.dk">Forside</a></nav>');
+            $('#test2').html('<nav class="nav-main"><a id="kontakt-os" href="kontakt-os.html">Kontakt</a><a> &#183; </a><a id="led" href="led.html">Ekspert i Led belysning</a><a> &#183; </a><a id="om-os" href="om-os.html">Om os</a><a> &#183; </a><a href="/">Forside</a></nav>');
             menuSelected();
             $('.nav-main').css('margin-top', '0px');
 
