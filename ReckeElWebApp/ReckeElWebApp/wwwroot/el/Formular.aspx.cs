@@ -70,7 +70,7 @@ namespace WebApplication1
 
 
           EmbedImages(test, HiddenFieldKundeID.Value);
-          SendImageButton.ImageUrl = "images/dataSendt.gif";
+          SendImageButton.ImageUrl = "/images/dataSendt.gif";
           //SendMail("lars@itsignatur.dk",test);
         }
 
