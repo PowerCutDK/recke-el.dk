@@ -1,0 +1,308 @@
+﻿
+	.eight img {width:inherit; border-radius: 5px 5px 5px 5px; } 	
+        
+   .menuLeft
+   {
+   			height:50px; 
+   			width:340px;
+        	background-color: rgb(255, 255, 255); 
+        	z-index: 999997; 
+        	opacity: .9; 
+        	margin-top:15px; 
+        	margin-left:5px; 
+        	padding: 4px; 
+        	display: block; 
+        	font-size: 13px; 
+        	font-weight: normal; 
+        	text-align: center; 
+        	color: rgb(255, 255, 255); 
+        	font-family: Arial,sans-serif; 
+        	line-height: 16px; 
+        	box-shadow: 0px 0px 8px rgb(0, 0, 0); 
+        	border-radius: 5px 5px 5px 5px; 
+        	 
+   	
+   	}  
+   	.menuLeft:hover
+   {
+   			background-color: rgb(246, 135, 45); 
+        	box-shadow: 0px 0px 15px rgb(0, 0, 0); 
+   }
+      	.menuLeft:selected
+   {
+   			background-color: rgb(246, 135, 45); 
+        	box-shadow: 0px 0px 15px rgb(0, 0, 0); 
+   } 
+   
+	.menuLeft:hover h5
+		   {
+   			color:White;
+		   } 
+	
+    .menuSelected
+   {
+   			background-color: rgb(246, 135, 45); 
+        	box-shadow: 0px 0px 15px rgb(0, 0, 0); 
+    }
+    .menuSelected h5
+		   {
+   			color:White;
+		   } 
+    
+   	.produkt-image{float:left; width:75px; height:50px; border-radius: 5px 5px 5px 5px; }   
+    .menu-text{padding-left:15px; margin-top:11px; float:left} 
+    
+    .pil-right{padding-left:15px; margin-top:14px; float:right;}  
+    
+  
+               
+               
+    
+        
+        
+        
+        
+        
+        
+        
+      
+        	
+        	
+        	
+        
+		
+		
+		
+		
+		
+		   #MenuBackgroundLeft
+        {
+        	height:0px; 
+        	 
+        	
+        	}
+         #MenuBackgroundLeftInner
+        {
+        	height:100%; 
+        	
+        	z-index: 999996; 
+        	opacity: 1; 
+        	position: fixed; 
+        	
+        	padding: 0px; 
+        	width: 50px;
+        	height: 450px; 
+        	font-size: 11px; 
+        	font-weight: normal; 
+        	text-align: center; 
+        	color: rgb(255, 255, 255); 
+        	font-family: Arial,sans-serif; 
+        	line-height: 10px; 
+        	
+        	TOP:180px; 
+        	left:0px;
+        	}
+		
+		.menuItemLeft
+		{
+			border-radius: 5px;  
+			border: 0px none; 
+			padding: 4px 10px; 
+			font-weight: bold; 
+			cursor: pointer; 
+			margin: 5px 10px; 
+			transition: all 0.25s ease 0s; 
+			text-shadow: 0px 0px 0px rgb(0, 0, 0); 
+			background-color: rgb(91, 183, 91); 
+			color: rgb(255, 255, 255); 
+			
+			width: 50px;
+			
+			
+		}
+		#kontakt ul li {
+		display: inline;
+		border-right: 1px solid #e6e6e6;
+		padding: 6px 26px 8px 26px;
+		margin: 0;
+		}
+		
+		#kontakt ul li:first-child {
+		border-left: 1px solid #e6e6e6;
+		}
+		#kontaktMobil ul li {
+		display: inline;
+		border-right: 1px solid #e6e6e6;
+		padding: 4px 14px 8px 14px;
+		margin: 0;
+		}
+		
+		#kontaktMobil ul li:first-child {
+		border-left: 1px solid #e6e6e6;
+		}
+		
+		a {cursor:pointer}
+		
+		.iframe
+		{
+			display:none;
+			
+			
+			}
+			.nav-main
+			{
+				max-width:700px;
+				float:right;
+				margin-right:40px;
+				color:white;
+				}
+				
+		.nav-main a 
+		{
+			font-weight:bold;
+			float:right;
+			margin-left:7px;
+			text-decoration:none;
+			text-transform: uppercase;
+			font-size:14px;
+			color:white;
+			}
+			.nav-main a:hover 
+		{
+			border-bottom: 1px solid #ffffff;
+			}
+			
+			.nav-main-Selected 
+			{
+   				border-bottom: 1px solid #ffffff;
+   			
+        	
+			}
+			
+			  .MobileCss {font-size: 14px;}
+		
+		
+		
+		 
+       
+   
+		
+       
+		.nav-hedder2
+		{
+			list-style-type: none;
+			text-transform:uppercase;
+			color:White;
+			font-family:Arial;
+			}
+			
+		.nav-hedder2 a
+		{
+			
+			color:White;
+			text-decoration:none;
+			
+			}
+			.nav-hedder2 a:hover
+		{
+			
+			color:White;
+			border-bottom: 1px solid #ffffff;
+			
+			}
+			
+			
+		.h7
+		{
+			color:White;
+			font-family: Arial;
+			}
+			
+		.header
+	{
+		background-color:Transparent; 
+		height:165px;
+		height:auto;
+	    overflow:hidden;  
+	    position: fixed;
+	    top: 0px;  
+	    z-index: 999996;
+	    width:100%;
+	    opacity: 0.97;
+	        }
+	        
+	     
+	.topLogo
+	{
+		background-color:Transparent; 
+		height:160px;
+	    overflow:hidden;  
+	    position:  fixed;
+	    top: 0px;  
+	    z-index: 999999;
+	    
+	    opacity: 0.8;
+	    
+	    
+	    }   
+	        
+	        	
+	.topText
+	{
+		background-color:Transparent; 
+		height:160px;
+	    overflow:hidden;  
+	    position: fixed;
+	    top: 0px;
+	    right:10px;  
+	    z-index: 999997;
+	    width:100%;
+	    opacity: 0.8;
+	    text-align:right;
+	}
+	.hedder1
+	{
+		font-family:Arial;
+		color:Black;
+		font-size:30px;
+		font-weight:bold;
+		padding-bottom:5px;
+		padding-top:5px;
+		}
+		.hedder2
+	{
+		font-family:Arial;
+		color:Black;
+		font-size:27px;
+		font-weight:bold;
+		}
+		.hedder3
+	{
+		font-family:Arial;
+		color:Black;
+		font-size:21px;
+		font-weight:bold;
+		}
+	
+	
+	
+        	#test2
+				{
+						z-index: 999999; 
+        	opacity: 1; 
+        	position: fixed; 
+        	padding: 0px; 
+        	
+        	font-size: 14px; 
+        	font-weight: normal; 
+        
+    	  	color: rgb(255, 255, 255); 
+        	font-family: Arial,sans-serif; 
+        	line-height: 20px;  
+        	TOP:120px; 
+        	
+					max-width: 60%;
+					position: fixed;
+					right:0px;
+					TOP:120px; 
+					}

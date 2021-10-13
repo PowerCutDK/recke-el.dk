@@ -1,0 +1,49 @@
+#live {
+      padding: 0;
+      top: 32px;
+      position: relative;
+      width: 100%;
+      max-width: 1280px;
+      height: 100%;
+      max-height: 720px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .menuItemLeft{
+      width: 70px;
+    }
+    #controlLogin {
+      display: none;
+    }
+    #topControl, #sideControl, #zoomControl {
+      z-index: 10000;
+      position: absolute;
+      display: none;
+    }
+    #topControl {
+      width: 100%;
+      top: -35px;
+    }
+    #panLeft {
+      position: absolute;
+      left: 0;
+    }
+
+    #sideControl {
+      height: 100%;
+      right: -41px;
+    }
+    #zoomControl {
+      height: 100%;
+      left: -41px;
+    }
+    #tiltDown, #zoomOut {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    #webcamSelector {
+      position: relative;
+      width: 50%;
+      top: 40px;
+    }

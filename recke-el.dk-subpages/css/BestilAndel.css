@@ -1,0 +1,184 @@
+﻿
+.tekstInsert
+{
+	width:100%;
+	font: 12px 'Source Sans Pro', sans-serif;
+	
+	color:#434343;
+	margin-left:13px;
+	margin-top:8px;
+	
+	
+}
+
+	.Husk
+	{
+		font-family:Arial;
+		display:none;
+		width:100%;
+		color:Black;
+		padding-left:0px;	
+		margin-top:-20px;
+		font-size:smaller;
+		}
+		
+#Send
+{
+	margin-top: 50px;
+	
+	
+	}
+	#KalveBilleder:after{
+		overflow:auto;
+}
+	
+	.smallImages
+		{
+			float: left;
+			margin-right:10px;
+			margin-bottom:10px;
+			padding-bottom:0px;
+			opacity: 0.8;
+			filter: alpha(opacity=80);
+			
+		}
+	.smallImages img
+		{
+			margin:0px; padding:0px;
+		    border: 2px solid rgb(255, 255, 255);}
+	.valgt
+	{
+		opacity: 1;
+		filter: alpha(opacity=100);
+		
+		}
+	.valgt img{border: 2px solid rgb(91, 183, 91);}
+			
+	.visikke
+	{
+		display:none;	
+		
+		}	
+		
+.select
+{
+		width: 100%;
+	
+		font-family: Arial;
+		font-size: 13px;
+		color: #434343;
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		font: 12px 'Source Sans Pro', sans-serif;
+		margin: 0;
+		margin-bottom: 20px;
+		background: #fff; 
+		overflow:auto;
+		height:auto;
+		}
+		
+.selectDiv
+{
+	width:-moz-calc(100% - 10px);
+	font-family: Arial;
+		font-size: 13px;
+		color: #434343;
+		border: 1px solid rgb(91, 183, 91);
+		padding: 6px 4px;
+		outline: none;
+		font: 12px 'Source Sans Pro', sans-serif;
+		margin: 0;
+		margin-bottom: 20px;
+		background: #fff;
+		cursor:pointer;
+		overflow:auto;
+		height:auto;
+ }
+ .selectAndel
+ {
+	width:-moz-calc(100% - 10px);
+		color: #434343;
+		border: 1px solid rgb(91, 183, 91);
+		padding: 6px 4px;
+		outline: none;
+		font: 12px 'Source Sans Pro', sans-serif;
+		margin: 0;
+		margin-bottom: 20px;
+		background: #fff;
+		cursor:pointer;
+		overflow:auto;
+		height:auto;
+		
+ }
+ .noSelectDiv
+{
+	width:-moz-calc(100% - 10px);
+	font-family: Arial;
+		font-size: 13px;
+		color: #434343;
+		border-bottom: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		font: 12px 'Source Sans Pro', sans-serif;
+		margin: 0;
+		margin-bottom: 20px;
+		background: #fff;
+		overflow:auto;
+		height:auto;
+		
+ }
+  .noSelectDiv2
+{
+	width:-moz-calc(100% - 10px);
+	font-family: Arial;
+		font-size: 13px;
+		color: #434343;
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		font: 12px 'Source Sans Pro', sans-serif;
+		margin: 0;
+		margin-bottom: 20px;
+		background: #fff;
+		overflow:auto;
+		height:auto;
+		
+ }
+ 
+ .knapnad
+ {
+ 	float:left; 
+ 	margin-top:-3px; 
+ 	margin-right:5px; 
+ 	content:url("/images/pilned.gif");
+ 	
+}
+
+.options
+{
+	border-radius: 2px;
+	background-color: rgb(91, 183, 91);
+	margin-top:22px;
+	color: #ffffff;
+	padding:2px;
+	margin: 15px 20px; 
+	overflow:auto;
+	height:auto;
+	/*transition: all 1.0s ease .5s; 
+	text-shadow: 0px 0px 0px rgb(0, 0, 0);*/
+	}
+	
+	.ko
+	{
+		background-color:#694f4a;
+	}
+	.stot{background-color:#157cdd;}
+	
+	.active{background-color:#ffffff;}
+	.samletAndlesPris, .samletAndlesPrisIalt, #Alder, .samletAndlesPrisNu
+	{
+		display:inline;
+		
+		}
+		.godkendKalv{width:600px}
