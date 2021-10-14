@@ -5,12 +5,12 @@
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>/el/el_installation.html</loc>
+    <loc>/el/elinstallation.html</loc>
     <priority>0.5000</priority>
   </url>
  
   <url>
-    <loc>/el/Landbrug.html</loc>
+    <loc>/el/landbrug.html</loc>
     <priority>0.5000</priority>
   </url>
   <url>
@@ -24,16 +24,16 @@
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>/el/Energioptimering.html</loc>
+    <loc>/el/energioptimering.html</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>/el/Eleftersyn.html</loc>
+    <loc>/el/eleftersyn.html</loc>
     <priority>0.5000</priority>
   </url>
   
   <url>
-    <loc>/el/it_data.html</loc>
+    <loc>/el/it-data.html</loc>
     <priority>0.5000</priority>
   </url>
   <url>
@@ -45,7 +45,7 @@
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>/el/om-os.html</loc>
+    <loc>/el/om.html</loc>
     <priority>0.5000</priority>
   </url>
  
@@ -54,7 +54,7 @@
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>/el/kontakt-os.html</loc>
+    <loc>/el/kontakt.html</loc>
     <priority>0.5000</priority>
   </url>
   
