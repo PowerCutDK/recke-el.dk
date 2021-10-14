@@ -9,8 +9,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head id="Head1" runat="server">
     
-    <script src="JS/jquery.min.js" type="text/javascript"></script>
-    <script src="JS/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/js/jquery-ui.min.js" type="text/javascript"></script>
 
     
     
