@@ -1,9 +1,7 @@
-﻿$(document).ready(function() {
-	imageresize(); // Triggers when document first loads
-	// $("html, body").animate({ scrollTop: 310 }, 4000);
-	$(window).bind("resize", function() { // Adjusts image when browser resized
-		imageresize();
-	});
+﻿imageresize(); // Triggers when document first loads
+// $("html, body").animate({ scrollTop: 310 }, 4000);
+$(window).bind("resize", function() { // Adjusts image when browser resized
+	imageresize();
 });
 
 function imageresize() {
