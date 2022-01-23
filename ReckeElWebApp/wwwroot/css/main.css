@@ -107,23 +107,6 @@ textarea {
   margin-top: 5px;
 }
 
-
-/* Facebook */
-.fb_iframe_widget {
-  width: 100%;
-}
-.fb_iframe_widget>span {
-  width: 100% !important;
-}
-.fb_iframe_widget>span>iframe {
-  width: 100% !important;
-}
-
-.fb-container {
-  max-width: 100%;
-}
-
-
 /* Desk */
 @media (min-width: 44.45em) {
   .widget-two {
@@ -136,26 +119,6 @@ textarea {
   .section-box--employee .section-box__image-wrapper{
     height: 170px;
   }
-
-  	.fb-container--small {
-	  width: 225px;
-	}
-
-  	.fb-container--large {
-	  width: 450px;
-	}
-}
-
-/* Tablet */
-@media only screen and (min-width:712px) and (max-width:959px) { 
-
-  	.fb-container--small {
-	  width: 275px;
-	}
-
-  	.fb-container--large{
-		width: 350px;
-  	}
 }
 
 /* Mobile */
