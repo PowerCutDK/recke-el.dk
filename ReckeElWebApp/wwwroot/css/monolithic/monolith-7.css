@@ -1,1 +1,332 @@
-﻿.cms-logo{max-height:90px;width:450px;top:5px}.bar h2.punchline--cms{font-size:10px;margin-left:7em;line-height:75px;text-align:left}.global-footer .box{width:48.81809%;float:left;margin-right:2.36382%}.slogan--cms{left:50%;bottom:0;height:258px;width:370px}.slogan--cms h2{font-size:28px;line-height:1}.local-footer .box{width:48.81809%;float:left;margin-right:2.36382%}.local-footer .box--last{float:right;margin-right:0}.banner-info{width:48.81809%;float:left;margin-right:2.36382%}.banner--custom .banner--media{width:48.81809%;float:left;margin-right:2.36382%}.grid--last{float:right;margin-right:0}.statement{min-height:150px}.statement__bargain{width:23.22713%;float:left;margin-right:2.36382%}.statement__content{width:48.81809%;float:left;margin-right:2.36382%;margin-top:5px}.statement__button{width:23.22713%;float:right;margin-right:0;margin-top:20px}.landingpage-content,.landingpage-content__no-fav{padding-top:2em;padding-bottom:3em}.landingpage-wrap:after{content:"";display:block}.landingpage-header{padding-top:4em;padding-bottom:4em}.landingpage-content__textarea__no-fav{width:48.81809%;float:left;margin-right:2.36382%}.landingpage-content__textarea__no-fav.omega{width:48.81809%;float:right;margin-right:0}.landingpage-content__textarea,.landingpage-content__contractor{width:100%;float:left;margin-right:2.36382%}.landingpage-header__textarea{width:48.81809%;float:left;margin-right:2.36382%}.landingpage-header__form{width:48.81809%;float:left;margin-right:2.36382%}.contractor-info .vcard{top:1em}.contractor-row{padding:1em}.landingpage-content__contractor.no-favorite{position:absolute;bottom:0;right:0}.landingpage-content__contractor.no-favorite p{margin-top:0}.landingpage-content__contractor.no-favorite .contractor-info{padding-left:2.3em}.flexslider.carousel--left-thumb{overflow:hidden}.carousel--left-thumb .flex-viewport{width:100%;float:left}.carousel--left-thumb .flex-control-thumbs{position:absolute;width:18%;height:100%;margin:0;left:0}.carousel--left-thumb .flex-control-thumbs li{width:100%;height:20%}.carousel--left-thumb .flex-control-thumbs img{width:95%;height:100%;border-right:1px solid #fff;border-top:1px solid #fff}.carousel--left-thumb .flex-control-thumbs .flex-active{width:100%}.carousel--left-thumb .flex-control-nav{z-index:99}.carousel--left-thumb .flex-control-nav:after{content:"";display:block;position:absolute;top:0;bottom:0;left:0;right:5%;background:rgba(0,0,0,0.9);z-index:-1}.carousel--left-thumb .flex-caption span{margin-left:17%;width:83%;display:block;padding:0.5em}}@media (min-width: 44.58125em) and (max-width: 59.10625em){.is-hidden-tablet{display:none !important}}@media (min-width: 59.10625em){.is-hidden-desktop{display:none !important}.grid--last-desktop{float:right;margin-right:0}.banner{min-height:342px !important}.banner--media{width:65.87873%;float:left;margin-right:2.36382%}.banner--text{width:31.75745%;float:right;margin-right:0}.banner--text h2{color:#fff;font:normal 1.3em/1.4em "Sansa Con Soft Pro Bold"}.takeover .bar .punchline{display:none}.content.article-page{width:74.55939%;float:left;margin-right:1.76245%;padding-right:4.5977%}.content .article--contact{width:74.55939%;float:left;margin-right:1.76245%;padding-right:4.5977%}.aside{width:23.67816%;float:right;margin-right:0}.banner--installatoer-logo+.logo{width:230px}.banner--installatoer-logo+.logo h2.punchline{font:normal 16px/16px "Sansa Con Soft Pro Bold"}.banner.installatoer--simple-banner .simple-banner--installatoer-tekst{display:inline;font:normal 55px/59px "Sansa Con Soft Pro Bold"}.bar{position:relative}.bar h2.punchline{display:inline-block;margin-top:0em}.section-box{width:31.75745%;float:left;margin-right:2.36382%}.section-box:nth-child(2n){float:left;margin-right:1.76245%}.section-box:nth-child(2n){margin-right:2.36382%}.section-box:nth-child(3n){float:right;margin-right:0}.slogan{right:0px;width:470px}.banner--installatoer-logo{width:325px;height:105px;top:135px;box-shadow:#333 0px 4px 0px}.banner--installatoer-logo img{height:100px;margin:5px auto;max-width:325px;}.installatoer--banner .banner--installatoer-image-1{margin-top:110px}
+﻿.cms-logo {
+	max-height: 90px;
+	width: 450px;
+	top: 5px
+}
+
+.bar h2.punchline--cms {
+	font-size: 10px;
+	margin-left: 7em;
+	line-height: 75px;
+	text-align: left
+}
+
+.global-footer .box {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.slogan--cms {
+	left: 50%;
+	bottom: 0;
+	height: 258px;
+	width: 370px
+}
+
+	.slogan--cms h2 {
+		font-size: 28px;
+		line-height: 1
+	}
+
+.local-footer .box {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.local-footer .box--last {
+	float: right;
+	margin-right: 0
+}
+
+.banner-info {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.banner--custom .banner--media {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.grid--last {
+	float: right;
+	margin-right: 0
+}
+
+.statement {
+	min-height: 150px
+}
+
+.statement__bargain {
+	width: 23.22713%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.statement__content {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%;
+	margin-top: 5px
+}
+
+.statement__button {
+	width: 23.22713%;
+	float: right;
+	margin-right: 0;
+	margin-top: 20px
+}
+
+.landingpage-content, .landingpage-content__no-fav {
+	padding-top: 2em;
+	padding-bottom: 3em
+}
+
+.landingpage-wrap:after {
+	content: "";
+	display: block
+}
+
+.landingpage-header {
+	padding-top: 4em;
+	padding-bottom: 4em
+}
+
+.landingpage-content__textarea__no-fav {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+	.landingpage-content__textarea__no-fav.omega {
+		width: 48.81809%;
+		float: right;
+		margin-right: 0
+	}
+
+.landingpage-content__textarea, .landingpage-content__contractor {
+	width: 100%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.landingpage-header__textarea {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.landingpage-header__form {
+	width: 48.81809%;
+	float: left;
+	margin-right: 2.36382%
+}
+
+.contractor-info .vcard {
+	top: 1em
+}
+
+.contractor-row {
+	padding: 1em
+}
+
+.landingpage-content__contractor.no-favorite {
+	position: absolute;
+	bottom: 0;
+	right: 0
+}
+
+	.landingpage-content__contractor.no-favorite p {
+		margin-top: 0
+	}
+
+	.landingpage-content__contractor.no-favorite .contractor-info {
+		padding-left: 2.3em
+	}
+
+.flexslider.carousel--left-thumb {
+	overflow: hidden
+}
+
+.carousel--left-thumb .flex-viewport {
+	width: 100%;
+	float: left
+}
+
+.carousel--left-thumb .flex-control-thumbs {
+	position: absolute;
+	width: 18%;
+	height: 100%;
+	margin: 0;
+	left: 0
+}
+
+	.carousel--left-thumb .flex-control-thumbs li {
+		width: 100%;
+		height: 20%
+	}
+
+	.carousel--left-thumb .flex-control-thumbs img {
+		width: 95%;
+		height: 100%;
+		border-right: 1px solid #fff;
+		border-top: 1px solid #fff
+	}
+
+	.carousel--left-thumb .flex-control-thumbs .flex-active {
+		width: 100%
+	}
+
+.carousel--left-thumb .flex-control-nav {
+	z-index: 99
+}
+
+	.carousel--left-thumb .flex-control-nav:after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 5%;
+		background: rgba(0,0,0,0.9);
+		z-index: -1
+	}
+
+.carousel--left-thumb .flex-caption span {
+	margin-left: 17%;
+	width: 83%;
+	display: block;
+	padding: 0.5em
+}
+
+}
+
+@media (min-width: 44.58125em) and (max-width: 59.10625em) {
+	.is-hidden-tablet {
+		display: none !important
+	}
+}
+
+@media (min-width: 59.10625em) {
+	.is-hidden-desktop {
+		display: none !important
+	}
+
+	.grid--last-desktop {
+		float: right;
+		margin-right: 0
+	}
+
+	.banner {
+		min-height: 342px !important
+	}
+
+	.banner--media {
+		width: 65.87873%;
+		float: left;
+		margin-right: 2.36382%
+	}
+
+	.banner--text {
+		width: 31.75745%;
+		float: right;
+		margin-right: 0
+	}
+
+		.banner--text h2 {
+			color: #fff;
+			font: normal 1.3em/1.4em "Sansa Con Soft Pro Bold"
+		}
+
+	.takeover .bar .punchline {
+		display: none
+	}
+
+	.content.article-page {
+		width: 74.55939%;
+		float: left;
+		margin-right: 1.76245%;
+		padding-right: 4.5977%
+	}
+
+	.content .article--contact {
+		width: 74.55939%;
+		float: left;
+		margin-right: 1.76245%;
+		padding-right: 4.5977%
+	}
+
+	.aside {
+		width: 23.67816%;
+		float: right;
+		margin-right: 0
+	}
+
+	.banner--installatoer-logo + .logo {
+		width: 230px
+	}
+
+		.banner--installatoer-logo + .logo h2.punchline {
+			font: normal 16px/16px "Sansa Con Soft Pro Bold"
+		}
+
+	.banner.installatoer--simple-banner .simple-banner--installatoer-tekst {
+		display: inline;
+		font: normal 55px/59px "Sansa Con Soft Pro Bold"
+	}
+
+	.bar {
+		position: relative
+	}
+
+		.bar h2.punchline {
+			display: inline-block;
+			margin-top: 0em
+		}
+
+	.section-box {
+		width: 31.75745%;
+		float: left;
+		margin-right: 2.36382%
+	}
+
+		.section-box:nth-child(2n) {
+			float: left;
+			margin-right: 1.76245%
+		}
+
+		.section-box:nth-child(2n) {
+			margin-right: 2.36382%
+		}
+
+		.section-box:nth-child(3n) {
+			float: right;
+			margin-right: 0
+		}
+
+	.slogan {
+		right: 0px;
+		width: 470px
+	}
+
+	.banner--installatoer-logo {
+		width: 325px;
+		height: 105px;
+		top: 135px;
+		box-shadow: #333 0px 4px 0px
+	}
+
+		.banner--installatoer-logo img {
+			height: 100px;
+			margin: 5px auto;
+			max-width: 325px;
+		}
+
+	.installatoer--banner .banner--installatoer-image-1 {
+		margin-top: 110px
+	}
