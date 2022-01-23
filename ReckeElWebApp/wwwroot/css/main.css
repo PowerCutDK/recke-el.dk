@@ -5,154 +5,152 @@
 		background-attachment: fixed !important;
 	}
 }
+
 @media only screen and (max-width: 1050px) {
-	.hoverimage { 
+	.hoverimage {
 		display: none !important;
 	}
 }
+
 .filter ul li {
-display: inline-block !important;
+	display: inline-block !important;
 }
+
 .portfolio_details a {
 	text-decoration: none;
 }
-p{word-wrap:break-word;}
+
+p {
+	word-wrap: break-word;
+}
 
 /* Hacky styles */
 input[type=text], input[type=password], input[type=tel], input[type=email], input[type=number] {
-  max-width:40rem;
+	max-width: 40rem;
 }
 
 textarea {
-  max-width: 40rem;
+	max-width: 40rem;
 }
 
 .contactForm input[type="checkbox"] {
-  display: inline-block;
-  width: auto;
-  margin: 6px 11px;
+	display: inline-block;
+	width: auto;
+	margin: 6px 11px;
 }
 
 .installatoer--banner {
-  padding-bottom: 0;
+	padding-bottom: 0;
 }
 
 .statement__wrapper {
-  overflow: hidden;
+	overflow: hidden;
 }
 
-.custom-color-orange{background-color:Transparent}
-body{background-color:transparent}
-.nav-main a 
-		{
-			
-			
-			text-transform: uppercase;
-			font-family: Arial,sans-serif; 
-			}
-			
-			
-			
-			
-h2
-{
-	color:White;
-	} 
-	
-	.tophedder
-	{
-		
-		float:left;
-		text-align:left;
-		color:White;
-		
-		
-	}
-	h1
-	{
-		color:White;
-				
-		}
-		
-	.nav-hedder2{list-style-type: none;text-transform:uppercase}
-	.topText
-	{
-		background-color:Transparent; 
-		height:160px;
-	    overflow:hidden;  
-	    position: fixed;
-	    top: 0px;
-	    right:10px;  
-	    z-index: 252;
-	    width:100%;
-	    opacity: 0.8;
-	    text-align:right;
-	}
-	.hedder1
-	{
-		font-family:Arial;
-		color:Black;
-		font-size:30px;
-		font-weight:bold;
-		}
-		.hedder2
-	{
-		font-family:Arial;
-		color:Black;
-		font-size:27px;
-		font-weight:bold;
-		}
-		.hedder3
-	{
-		font-family:Arial;
-		color:Black;
-		font-size:21px;
-		font-weight:bold;
-		}
-	
-	.topLogo
-	{
-		background-color:Transparent; 
-		height:160px;
-	    overflow:hidden;  
-	    position:  fixed;
-	    top: 0px;  
-	    z-index: 250;
-	   
-	    opacity: 0.8;
-	    
-	    
-	    }
-	
-	.header
-	{
-		background-color:Transparent; 
-		height:160px;
-		height:auto;
-	    overflow:hidden;  
-	    position: fixed;
-	    top: 0px;  
-	    z-index: 250;
-	    width:100%;
-	        }
-	        
-	      #topBG
-{
-	width:100%;
-	background-color:White;
+.custom-color-orange {
+	background-color: Transparent
+}
+
+body {
+	background-color: transparent
+}
+
+.nav-main a {
+	text-transform: uppercase;
+	font-family: Arial,sans-serif;
+}
+
+h2 {
+	color: White;
+}
+
+.tophedder {
+	float: left;
+	text-align: left;
+	color: White;
+}
+
+h1 {
+	color: White;
+}
+
+.nav-hedder2 {
+	list-style-type: none;
+	text-transform: uppercase
+}
+
+.topText {
+	background-color: Transparent;
+	height: 160px;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	right: 10px;
+	z-index: 252;
+	width: 100%;
+	opacity: 0.8;
+	text-align: right;
+}
+
+.hedder1 {
+	font-family: Arial;
+	color: Black;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.hedder2 {
+	font-family: Arial;
+	color: Black;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+.hedder3 {
+	font-family: Arial;
+	color: Black;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.topLogo {
+	background-color: Transparent;
+	height: 160px;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	z-index: 250;
+	opacity: 0.8;
+}
+
+.header {
+	background-color: Transparent;
+	height: 160px;
+	height: auto;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	z-index: 250;
+	width: 100%;
+}
+
+#topBG {
+	width: 100%;
+	background-color: White;
 	/*border-style:solid;
 	border-bottom-color:White;
 	border-bottom-width:1px;
 	border-top-width:1px;*/
-	position:relative;
-	top:160px;
-	}  
+	position: relative;
+	top: 160px;
+}
 
 .separator1 {
 	width: 100%;
 	height: 500px;
 	position: relative;
 }
+
 p.separator {
 	font-size: 30px;
 	font-weight: 600;
@@ -167,7 +165,6 @@ p.separator {
 }
 
 .separator1 .bg {
-	
 	background-size: cover !important;
 	-webkit-background-size: cover !important;
 	margin: 0 auto;
@@ -181,36 +178,48 @@ p.separator {
 .separator1 .bg6 {
 	background: url(../images/bg3.jpg) repeat center;
 }
-.zindex-500{position:relative; z-index:500}
+
+.zindex-500 {
+	position: relative;
+	z-index: 500
+}
+
 .separator1 .bg1 {
-	background: url(../images/bg4.jpg) repeat center; z-index:500;
+	background: url(../images/bg4.jpg) repeat center;
+	z-index: 500;
 }
-.indhold
-{
-	position:relative;
-	top:190px;
+
+.indhold {
+	position: relative;
+	top: 190px;
+}
+
+#menuTop {
+	max-width: 950px;
+}
+
+	#menuTop a {
+		font-family: Arial;
+		font-size: 20px;
+		float: right;
+		padding-right: 10px;
+		padding-left: 10px;
+		text-transform: uppercase;
 	}
-	
-#menuTop
-{
-	max-width:950px;
-	 }
-#menuTop a
-{
-	font-family:Arial;
-	font-size:20px;
-	float:right;
-	padding-right:10px;
-	padding-left: 10px;
-	text-transform:uppercase;
+
+		#menuTop a:hover {
+			border-bottom-color: Black;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
 		}
-#menuTop a:hover
-{
-	border-bottom-color:Black;
-	border-bottom-style:solid;
-	border-bottom-width:1px;
+
+.grid-group--center h1 {
+	color: #f68427;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 30px
 }
 
-.grid-group--center h1{color:#f68427; font-weight:bold; text-transform:uppercase; font-size:30px}
-
-h2{color:black}
+h2 {
+	color: black
+}
