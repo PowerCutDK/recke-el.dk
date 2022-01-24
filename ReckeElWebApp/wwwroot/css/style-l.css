@@ -28,7 +28,7 @@
 		box-shadow: 0px 0px 15px rgb(0, 0, 0);
 	}
 
-	.menuLeft:selected {
+	.menuLeft.selected {
 		background-color: rgb(246, 135, 45);
 		box-shadow: 0px 0px 15px rgb(0, 0, 0);
 	}
@@ -208,5 +208,5 @@ a {
 	max-width: 60%;
 	position: fixed;
 	right: 0px;
-	TOP: 120px;
+	top: 120px;
 }

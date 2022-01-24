@@ -70,10 +70,8 @@ footer {
 	}
 
 		.section-box:hover .section-box__shadow {
-			filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
 			opacity: 1;
 			background: transparent;
-			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"
 		}
 
 .section-box__image-wrapper {
@@ -111,10 +109,8 @@ footer {
 }
 
 .section-box__shadow {
-	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
 	opacity: 0.75;
 	background: transparent;
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
 	position: absolute;
 	z-index: -1;
 	width: 110%;
