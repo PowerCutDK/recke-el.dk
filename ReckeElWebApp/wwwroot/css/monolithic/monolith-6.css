@@ -1,13 +1,13 @@
-.slim-footer--cms {
-	background: #000
+﻿.slim-footer--cms {
+	background: #000;
 }
 
 .custom-color-orange .banner .title {
-	color: #69c0e8
+	color: #69c0e8;
 }
 
 .custom-color-orange .bar {
-	background: #b16600
+	background: #b16600;
 }
 
 .custom-color-orange .banner {
@@ -22,7 +22,7 @@
 }
 
 .custom-color-orange a.widget--toggle-open {
-	background-color: #019dda
+	background-color: #019dda;
 }
 
 .custom-color-orange .btn {
@@ -33,7 +33,7 @@
 	background: -webkit-linear-gradient(top, #f0ff47, #bccd00);
 	background: linear-gradient(top, #f0ff47,#bccd00);
 	border: 1px solid #becf02;
-	color: #036
+	color: #036;
 }
 
 	.custom-color-orange .btn:hover {
@@ -42,7 +42,7 @@
 		background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bccd00), color-stop(100%, #f0ff47));
 		background: -webkit-linear-gradient(top, #bccd00,#f0ff47);
 		background: -webkit-linear-gradient(top, #bccd00, #f0ff47);
-		background: linear-gradient(top, #bccd00,#f0ff47)
+		background: linear-gradient(top, #bccd00,#f0ff47);
 	}
 
 .custom-color-orange .local-footer {
@@ -54,27 +54,27 @@
 }
 
 .custom-color-orange .slim-footer--cms {
-	background: #003875
+	background: #003875;
 }
 
 .b-lazy {
 	-webkit-transition: opacity 500ms ease-in-out;
 	transition: opacity 500ms ease-in-out;
 	max-width: 100%;
-	opacity: 0
+	opacity: 0;
 }
 
 	.b-lazy.b-loaded {
-		opacity: 1
+		opacity: 1;
 	}
 
 @media (min-width: 44.58125em) {
 	.header {
-		height: 165px
+		height: 165px;
 	}
 
 		.header .nav-small-mobile-nav {
-			display: none
+			display: none;
 		}
 
 		.header .nav-small {
@@ -84,15 +84,15 @@
 			font-size: 12px;
 			text-align: right;
 			color: #004578;
-			margin: 25px 0
+			margin: 25px 0;
 		}
 
 			.header .nav-small.mobile-nav {
-				display: none
+				display: none;
 			}
 
 			.header .nav-small a {
-				display: inline-block
+				display: inline-block;
 			}
 
 			.header .nav-small li {
@@ -100,22 +100,22 @@
 				display: inline-block;
 				margin-left: 5px;
 				font: normal 14px/16px "Sansa Con Soft Pro Regular";
-				cursor: pointer
+				cursor: pointer;
 			}
 
 				.header .nav-small li a.active-trail.active, .header .nav-small li a.active {
-					color: red
+					color: red;
 				}
 
 				.header .nav-small li:before {
 					content: '\00B7';
-					padding-right: 5px
+					padding-right: 5px;
 				}
 
 				.header .nav-small li:first-child:before {
 					content: ' ';
 					height: 0px;
-					padding-right: 0
+					padding-right: 0;
 				}
 
 		.header .top-search {
@@ -126,7 +126,7 @@
 			text-transform: none;
 			font-style: italic;
 			font-family: "Open Sans",Sans-serif;
-			font-size: 12px
+			font-size: 12px;
 		}
 
 		.header button.icon-search {
@@ -136,57 +136,57 @@
 			border: none;
 			font-size: 16px;
 			color: #004578;
-			cursor: pointer
+			cursor: pointer;
 		}
 
 	.content:after {
 		content: "";
-		clear: both
+		clear: both;
 	}
 
 	.footer .contact {
 		float: right;
-		margin-right: 0
+		margin-right: 0;
 	}
 
 	.login-box {
 		width: 31.75745%;
 		float: right;
 		margin-right: 0;
-		right: 1.15em
+		right: 1.15em;
 	}
 
 	.slim-footer {
 		position: relative;
-		min-height: 60px
+		min-height: 60px;
 	}
 
 	.section-box {
 		width: 48.81809%;
 		float: left;
-		margin-right: 2.36382%
+		margin-right: 2.36382%;
 	}
 
 		.section-box:nth-child(2n) {
 			float: right;
-			margin-right: 0
+			margin-right: 0;
 		}
 
 	.section-box--article {
-		height: 320px
+		height: 320px;
 	}
 
 	.imgSection img, .imgSection {
 		max-width: none;
 		margin: 0 -138px;
-		width: auto
+		width: auto;
 	}
 
 	.section-box__image-wrapper img {
-		width: 100%
+		width: 100%;
 	}
 
 	.section-filtering {
-		margin: 1em 0
+		margin: 1em 0;
 	}
 }
