@@ -87,20 +87,6 @@
 	left: 0px;
 }
 
-.menuItemLeft {
-	border-radius: 5px;
-	border: 0px none;
-	padding: 4px 10px;
-	font-weight: bold;
-	cursor: pointer;
-	margin: 5px 10px;
-	transition: all 0.25s ease 0s;
-	text-shadow: 0px 0px 0px rgb(0, 0, 0);
-	background-color: rgb(91, 183, 91);
-	color: rgb(255, 255, 255);
-	width: 50px;
-}
-
 #kontakt ul li {
 	display: inline;
 	border-right: 1px solid #e6e6e6;
@@ -112,23 +98,8 @@
 		border-left: 1px solid #e6e6e6;
 	}
 
-#kontaktMobil ul li {
-	display: inline;
-	border-right: 1px solid #e6e6e6;
-	padding: 4px 14px 8px 14px;
-	margin: 0;
-}
-
-	#kontaktMobil ul li:first-child {
-		border-left: 1px solid #e6e6e6;
-	}
-
 a {
 	cursor: pointer
-}
-
-.iframe {
-	display: none;
 }
 
 .nav-main {
@@ -159,23 +130,6 @@ a {
 .MobileCss {
 	font-size: 14px;
 }
-
-.nav-hedder2 {
-	list-style-type: none;
-	text-transform: uppercase;
-	color: White;
-	font-family: Arial;
-}
-
-	.nav-hedder2 a {
-		color: White;
-		text-decoration: none;
-	}
-
-		.nav-hedder2 a:hover {
-			color: White;
-			border-bottom: 1px solid #ffffff;
-		}
 
 .h7 {
 	color: White;
