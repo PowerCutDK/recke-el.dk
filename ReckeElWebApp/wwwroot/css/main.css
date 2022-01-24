@@ -6,46 +6,11 @@
 	}
 }
 
-@media only screen and (max-width: 1050px) {
-	.hoverimage {
-		display: none !important;
-	}
-}
-
-.filter ul li {
-	display: inline-block !important;
-}
-
-.portfolio_details a {
-	text-decoration: none;
-}
-
 p {
 	word-wrap: break-word;
 }
 
 /* Hacky styles */
-input[type=text], input[type=password], input[type=tel], input[type=email], input[type=number] {
-	max-width: 40rem;
-}
-
-textarea {
-	max-width: 40rem;
-}
-
-.contactForm input[type="checkbox"] {
-	display: inline-block;
-	width: auto;
-	margin: 6px 11px;
-}
-
-.installatoer--banner {
-	padding-bottom: 0;
-}
-
-.statement__wrapper {
-	overflow: hidden;
-}
 
 .custom-color-orange {
 	background-color: Transparent
@@ -64,19 +29,8 @@ h2 {
 	color: White;
 }
 
-.tophedder {
-	float: left;
-	text-align: left;
-	color: White;
-}
-
 h1 {
 	color: White;
-}
-
-.nav-hedder2 {
-	list-style-type: none;
-	text-transform: uppercase
 }
 
 .topText {
@@ -177,11 +131,6 @@ p.separator {
 
 .separator1 .bg6 {
 	background: url(../images/bg3.jpg) repeat center;
-}
-
-.zindex-500 {
-	position: relative;
-	z-index: 500
 }
 
 .separator1 .bg1 {
