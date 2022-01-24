@@ -169,39 +169,6 @@
 	margin-top: 4em
 }
 
-.search-results-wrapper {
-	margin-top: 2em
-}
-
-.search-result {
-	border-top: 1px solid #004578;
-	display: block;
-	padding-top: 1em;
-	padding-bottom: 2em;
-	max-width: 700px
-}
-
-	.search-result h2 {
-		color: #004578
-	}
-
-	.search-result p {
-		color: #333
-	}
-
-	.search-result .link, .search-result .has-link-style a, .has-link-style .search-result a, .search-result .aside a, .aside .search-result a, .search-result .content article a, .content article .search-result a, .search-result .section-box--employee .section-box__info-wrapper a, .section-box--employee .section-box__info-wrapper .search-result a {
-		display: inline-block;
-		color: inherit
-	}
-
-	.search-result:hover {
-		text-decoration: none
-	}
-
-	.search-result h2:hover {
-		text-decoration: underline
-	}
-
 footer {
 	*zoom: 1;
 	overflow: hidden
@@ -211,99 +178,6 @@ footer {
 		content: "";
 		display: table;
 		clear: both
-	}
-
-.global-footer {
-	position: relative;
-	padding: 5.25em 0;
-	font-family: "Open Sans",Sans-serif;
-	font-size: 13px;
-	color: #666;
-	background: #e1e1e1;
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(15%, #e1e1e1), color-stop(82%, #9c9c9c), color-stop(100%, #9c9c9c), color-stop(100%, #9c9c9c));
-	background: -webkit-radial-gradient(center, ellipse cover, #e1e1e1 15%, #9c9c9c 82%, #9c9c9c 100%, #9c9c9c 100%);
-	background: -webkit-radial-gradient(center, ellipse, #e1e1e1 15%, #9c9c9c 82%, #9c9c9c 100%, #9c9c9c 100%);
-	background: radial-gradient(ellipse at center, #e1e1e1 15%,#9c9c9c 82%,#9c9c9c 100%,#9c9c9c 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e1e1e1', endColorstr='#9c9c9c',GradientType=1 )
-}
-
-	.global-footer a {
-		color: #666
-	}
-
-	.global-footer .sub-box {
-		width: 45%;
-		margin-right: 5%;
-		float: left
-	}
-
-	.global-footer .link-list li {
-		border-color: #666
-	}
-
-.link-list {
-	padding: 0;
-	font-family: "Sansa Con Soft Pro Regular";
-	font-size: 14px
-}
-
-	.link-list li {
-		list-style: none;
-		border-bottom: 1px solid;
-		padding: 0.60em 0.60em 0.60em 0
-	}
-
-		.link-list li:first-of-type {
-			border-top: 1px solid
-		}
-
-	.link-list a {
-		letter-spacing: 0.05em
-	}
-
-.slogan {
-	color: #fff;
-	position: relative
-}
-
-.slogan--cms {
-	position: absolute;
-	background-size: cover;
-	background-repeat: no-repeat
-}
-
-	.slogan--cms .bar-icons {
-		float: left
-	}
-
-.local-footer {
-	padding: 3.15em 0;
-	color: #fff;
-	width: 100%;
-	font-size: 13px
-}
-
-	.local-footer p {
-		margin-bottom: 1.5em
-	}
-
-	.local-footer .footer--tilmelding input {
-		min-width: 60%;
-		margin-right: 1em
-	}
-
-	.local-footer .link-list {
-		float: left;
-		width: 45%;
-		margin-right: 5%
-	}
-
-		.local-footer .link-list li {
-			border-color: #fff
-		}
-
-	.local-footer a {
-		color: #fff
 	}
 
 .slim-footer--cms {
@@ -329,51 +203,6 @@ footer {
 	color: red
 }
 
-.center-logo {
-	padding: 1em
-}
-
-	.center-logo img {
-		margin: 0 auto;
-		max-height: 100px;
-		display: block
-	}
-
-.button-wrap {
-	text-align: center;
-	margin: 1em 0
-}
-
-input {
-	position: relative
-}
-
-	input[type=text], input[type=password], input[type=tel], input[type=email], input[type=number] {
-		border: 1px solid #aaa;
-		box-shadow: #aaa 0px 2px 4px inset;
-		border-radius: 6px;
-		background: #f7f7f7;
-		min-height: 40px;
-		line-height: 40px;
-		padding: 0 8px
-	}
-
-	input.required:after {
-		content: "*"
-	}
-
-textarea {
-	border: 1px solid #aaa;
-	box-shadow: #aaa 0px 2px 4px inset;
-	border-radius: 6px;
-	background: #f7f7f7;
-	min-height: 125px;
-	line-height: 1.5;
-	padding: 8px;
-	width: 100%;
-	max-width: 500px
-}
-
 ::-webkit-input-placeholder {
 	text-transform: uppercase
 }
@@ -388,82 +217,6 @@ textarea {
 
 :-ms-input-placeholder {
 	text-transform: uppercase
-}
-
-.form--block {
-	margin-bottom: 2em
-}
-
-	.form--block > div {
-		margin-top: .5em;
-		display: inline-block;
-		width: 100%;
-	}
-
-		.form--block > div:first-child {
-			margin-top: 0
-		}
-
-		.form--block > div.error {
-			margin-top: 0
-		}
-
-		.form--block > div > input, .form--block > div > select, .form--block > div > textarea {
-			display: block;
-			width: 100%
-		}
-
-		.form--block > div select {
-			font-size: 16px;
-			line-height: 20px;
-			padding: 8px 5px
-		}
-
-	.form--block .btn {
-		margin-top: 1em
-	}
-
-.checkbox {
-	margin-bottom: 1em
-}
-
-.checkbox__choice label {
-	height: 30px
-}
-
-.no-svg .checkbox__choice input[type='radio'] {
-	margin-left: 1em
-}
-
-.svg .checkbox__choice input[type='radio'] {
-	visibility: hidden
-}
-
-	.svg .checkbox__choice input[type='radio']:checked + label:before {
-		background-image: url("../images/checkbox_selected.svg")
-	}
-
-.svg .checkbox__choice label {
-	padding-left: 1em
-}
-
-	.svg .checkbox__choice label:before {
-		content: '';
-		background-image: url("../images/checkbox_unselected.svg");
-		background-repeat: no-repeat;
-		background-position: center;
-		margin-left: -1.25em;
-		margin-top: -.2em;
-		width: 2em;
-		height: 2em;
-		display: inline-block;
-		vertical-align: middle;
-		background-size: cover
-	}
-
-.checkbox__description {
-	margin-bottom: .25em;
-	display: block
 }
 
 .section-box {
@@ -573,23 +326,6 @@ textarea {
 @media (max-width: 600px) {
 	.section-box__type {
 		display: none
-	}
-}
-
-.section-boxes--employees {
-	overflow: visible;
-	margin-bottom: 1.5em;
-	float: left;
-	width: 100%
-}
-
-.section-box--employee .section-box__info-wrapper {
-	padding: 22px
-}
-
-@media only screen and (max-width: 711px) {
-	.section-box--employee .section-box__info-wrapper {
-		padding: 11px
 	}
 }
 
@@ -731,14 +467,6 @@ textarea {
 			width: 100%
 		}
 
-.section-box__content {
-	font-family: "Sansa Con Soft Pro Regular";
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-top: 0;
-	color: #036
-}
-
 .statement {
 	*zoom: 1;
 	background-color: white;
@@ -756,52 +484,3 @@ textarea {
 	.statement .btn {
 		text-align: center
 	}
-
-.statement__bargain {
-	font-family: "Sansa Con Soft Pro Regular";
-	color: #69c0e8;
-	text-align: center
-}
-
-.bargain__number {
-	font-size: 5em;
-	line-height: .75em
-}
-
-.bargain__text {
-	font-size: 2.5em
-}
-
-.statement__content {
-	font-family: "Sansa Con Soft Pro Bold";
-	font-size: 1.25em;
-	margin: 0;
-	color: #036
-}
-
-.tooltip-toggle {
-	border-radius: 50%;
-	margin-bottom: 4px;
-	float: right;
-	cursor: pointer;
-	background-color: #036;
-	color: white;
-	width: 18px;
-	height: 18px;
-	text-align: center;
-	font-weight: bold;
-	padding: 2px;
-	line-height: 14px
-}
-
-	.tooltip-toggle:hover, .tooltip-toggle.active {
-		text-decoration: none;
-		color: #036;
-		border: 1px solid #036;
-		background-color: white
-	}
-
-.tooltip {
-	display: none;
-	padding: 0 1em 1em 1em
-}
