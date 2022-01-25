@@ -1,6 +1,6 @@
 ﻿function removemenu() {
-	//$('.MenuBackgroundLeftInner').bind("mouseout", function() {
-	$('.bg').bind("mouseenter", function() {
+	//$(".MenuBackgroundLeftInner").bind("mouseout", function() {
+	$(".bg").bind("mouseenter", function() {
 		$("#MenuBackgroundLeftInner").css("width", "50px");
 		$(".menuLeft").css("width", "115px");
 		imageresize();
@@ -8,20 +8,20 @@
 }
 
 function createmenu() {
-	$('.menuLeft').bind("mouseover", function() {
+	$(".menuLeft").bind("mouseover", function() {
 		$("#MenuBackgroundLeftInner").css("width", "350px");
-		$("#MenuBackgroundLeftInner").show('slow');
-		$(".menu-text").show('slow');
+		$("#MenuBackgroundLeftInner").show("slow");
+		$(".menu-text").show("slow");
 		$(".menuLeft").css("width", "340px");
 		removemenu();
-		$('.menuLeft').unbind("mouseover");
+		$(".menuLeft").unbind("mouseover");
 		//alert("jeg er her nu");
 	});
 }
 
 function menuSelected() {
-	var arr = $(location).attr('pathname').split('/');
-	var arrr = arr[arr.length - 1].split('.');
+	var arr = $(location).attr("pathname").split("/");
+	var arrr = arr[arr.length - 1].split(".");
 	var urlName = arrr[0];
 
 	//$('#"+urlName+"').addClass("selected_menu");
@@ -42,41 +42,41 @@ function imageresize() {
 	var minWidthContainerBIG = 1390;
 	var MinMenuWidth = 1000;
 
-	if (typeof window.innerWidth != 'undefined') {
+	if (typeof window.innerWidth != "undefined") {
 		Width = window.innerWidth;
 		Height = window.innerHeight;
 	}
-	else if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0) {
+	else if (typeof document.documentElement != "undefined" && typeof document.documentElement.clientWidth != "undefined" && document.documentElement.clientWidth != 0) {
 		Width = document.documentElement.offsetWidth;
 		Height = document.documentElement.offsetHeight;
 	}
 
 	if (Width < 1060) {
 
-		$(".topText").hide('slow');
+		$(".topText").hide("slow");
 		$(".topLogo").css("width", "100%");
 		$("#topLogo").css("width", Width - 200 + "px");
 		$("#test").css("top", (Width / 10) + 28 + "px");
 		$("#test2").css("top", (Width / 10) + 28 + "px");
 	}
 	else {
-		$(".topText").show('slow');
+		$(".topText").show("slow");
 		$(".topLogo").css("width", "70%");
 		$("#topLogo").css("max-width", "100%");
 	}
 
 	if (Width < LmobilWidth) {
-		$(".topLogo").css('position', "absolute");
-		$(".header").css('position', "absolute");
+		$(".topLogo").css("position", "absolute");
+		$(".header").css("position", "absolute");
 		$("#test2").css("position", "absolute");
 	}
 	else {
-		$(".topLogo").css('position', "fixed");
-		$(".header").css('position', "fixed");
+		$(".topLogo").css("position", "fixed");
+		$(".header").css("position", "fixed");
 		$("#test2").css("position", "fixed");
 	}
 
-	$('#MenuBackgroundLeftInner').html(`
+	$("#MenuBackgroundLeftInner").html(`
 		<a id="el_installation" class="menuLeft" href="elinstallation">
 			<img src="/images/elinstallation.jpg" class="produkt-image">
 			<h5 class="menu-text">El Installation</h5>
@@ -127,17 +127,17 @@ function imageresize() {
 	menuSelected();
 
 	if (Width > minWidth) {
-		$("#MenuBackgroundLeftInner").show('slow');
+		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menuLeft").css("width", "340px");
-		$(".menu-text").show('slow');
+		$(".menu-text").show("slow");
 		$("#MenuBackgroundLeftInner").css("width", "340px");
-		$('#menu2').html("");
+		$("#menu2").html("");
 		createmenu();
 	}
 	if ((Width > (minWidth - 475)) && (Width < minWidth)) {
-		$("#MenuBackgroundLeftInner").show('slow');
+		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menuLeft").css("width", "115px");
-		$('#menu2').html("");
+		$("#menu2").html("");
 		createmenu();
 
 		//alert("jeg er her");
@@ -145,8 +145,8 @@ function imageresize() {
 	}
 
 	if (Width < minWidth - 475) {
-		$("#MenuBackgroundLeftInner").hide('slow');
-		$('#menu2').html(`
+		$("#MenuBackgroundLeftInner").hide("slow");
+		$("#menu2").html(`
 			<br /><br /><br />
 			<div class="eight columns">
 				<a id="el_installation" class="menuLeft" href="elinstallation">
@@ -208,41 +208,41 @@ function imageresize() {
 		//else { $("html, body").animate({ scrollTop: 300 }, 2000); }
 
 		if (Width < 450) {
-			$('.menu-text').addClass('MobileCss');
+			$(".menu-text").addClass("MobileCss");
 			$(".menuLeft").css("width", "280px");
 			$(".lines").css("font-size", "45px");
 		}
 		else {
-			$('.menu-text').removeClass('MobileCss');
+			$(".menu-text").removeClass("MobileCss");
 			$(".menuLeft").css("width", "340px");
 		}
 		menuSelected();
 	}
 
 	if (Width < minWidthContainerBIG) {
-		$('.containerBIG').hide('slow');
+		$(".containerBIG").hide("slow");
 	}
 
 	if (Width < imgWidth) {
-		$('.ansatImg').css("width", Width - 75 + "px");
+		$(".ansatImg").css("width", Width - 75 + "px");
 	}
 
 	if (Width > imgWidth) {
-		if (1000 > Width) { $('.ansatImg').css("width", "350px"); }
-		else { $('.ansatImg').css("width", "450px"); }
+		if (1000 > Width) { $(".ansatImg").css("width", "350px"); }
+		else { $(".ansatImg").css("width", "450px"); }
 	}
 
 	if (Width > minWidthContainerBIG) {
-		$('.containerBIG').show('slow');
-		//$('.containerBIG').css("width",minWidthContainerBIG );
+		$(".containerBIG").show("slow");
+		//$(".containerBIG").css("width",minWidthContainerBIG );
 	}
 
 	if (Width < MinMenuWidth) {
 		var LocalUrl = location.href;
 		// $("#MenuBackground").hide();
-		// $('#Menu').css("width", Width + "px");
-		$('#kontakt').html('Recke-El ApS<a href="tel:62 26 10 18">62 26 10 18</a> <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a>');
-		$('#test2').html(`
+		// $("#Menu").css("width", Width + "px");
+		$("#kontakt").html(`Recke-El ApS<a href="tel:62 26 10 18">62 26 10 18</a> <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a>`);
+		$("#test2").html(`
 			<nav class="nav-main">
 				<a id="kontakt-os" href="kontakt">Kontakt</a>
 				<a> &#183; </a>
@@ -258,7 +258,7 @@ function imageresize() {
 	}
 
 	if (Width > (MinMenuWidth)) {
-		$('#kontakt').html(`
+		$("#kontakt").html(`
 			<ul>
 				<li>Recke-El ApS</li>
 				<li>Stationsvej 54</li>
@@ -267,7 +267,7 @@ function imageresize() {
 				<li><a href="mailo:mail@recke-el.dk">mail@recke-el.dk</a></li>
 			</ul>
 		`);
-		$('#test2').html(`
+		$("#test2").html(`
 			<nav class="nav-main">
 				<a id="kontakt-os" href="kontakt">Kontakt</a>
 				<a> &#183; </a>
@@ -279,7 +279,7 @@ function imageresize() {
 			</nav>
 		`);
 		menuSelected();
-		$('.nav-main').css('margin-top', '0px');
+		$(".nav-main").css("margin-top", "0px");
 	}
 
 	if (Height < 700) {
@@ -293,13 +293,13 @@ function imageresize() {
 		$("#menu2").show();
 	}
 
-	$('.menuItem').bind("mouseover", function() {
+	$(".menuItem").bind("mouseover", function() {
 		//var color = $(this).css("background-color");
 
 		$(this).css("background", "rgb(88, 60, 54)");
 		$(this).bind("mouseout", function() {
-			$('.menuItem').css("background", "rgb(91, 183, 91)");
-			$('.menuItem').css("color", "white");
+			$(".menuItem").css("background", "rgb(91, 183, 91)");
+			$(".menuItem").css("color", "white");
 		})
 	});
 };
@@ -312,12 +312,12 @@ $(window).bind("resize", function() { // Adjusts image when browser resized
 
 //if (1 == 1) { alert("test"); };
 
-$('.menuItem').bind("mouseover", function() {
+$(".menuItem").bind("mouseover", function() {
 	//var color = $(this).css("background-color");
 	$(this).css("background", "rgb(88, 60, 54)");
 	$(this).bind("mouseout", function() {
-		$('.menuItem').css("background", "rgb(91, 183, 91)");
-		$('.menuItem').css("color", "white");
+		$(".menuItem").css("background", "rgb(91, 183, 91)");
+		$(".menuItem").css("color", "white");
 	})
 });
 
