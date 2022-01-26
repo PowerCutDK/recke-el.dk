@@ -146,9 +146,9 @@ resizePage();
 $(window).resize(resizePage);
 
 function resizePage() {
-	let mobileWidth = 860;
-	let minWidth = 1675;
-	let menuMinWidth = 1000;
+	const mobileWidth = 860;
+	const minWidth = 1675;
+	const menuMinWidth = 1000;
 
 	let width = window.innerWidth;
 	let height = window.innerHeight;
