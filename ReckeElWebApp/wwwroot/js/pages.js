@@ -24,7 +24,7 @@ const contactHtml = `
 	</ul>
 	`;
 
-const menuHtml1 = `
+const navSideHtml = `
 	<a id="el_installation" class="menuLeft" href="elinstallation">
 		<img src="/images/elinstallation.jpg" class="produkt-image">
 		<h5 class="menu-text">El Installation</h5>
@@ -72,7 +72,7 @@ const menuHtml1 = `
 	</a>
 	`;
 
-const menuHtml2 = `
+const navTwoColumnHtml = `
 	<br /><br /><br />
 	<div class="eight columns">
 		<a id="el_installation" class="menuLeft" href="elinstallation">
@@ -163,7 +163,7 @@ function resizePage() {
 		$("#test2").css("position", "fixed");
 	}
 
-	$("#MenuBackgroundLeftInner").html(menuHtml1);
+	$("#MenuBackgroundLeftInner").html(navSideHtml);
 
 	if (width > minWidth) {
 		$("#MenuBackgroundLeftInner").show();
@@ -183,7 +183,7 @@ function resizePage() {
 	}
 	else {
 		$("#MenuBackgroundLeftInner").hide();
-		$("#menu2").html(menuHtml2);
+		$("#menu2").html(navTwoColumnHtml);
 
 		$(".pil-right").css("width", "21px");
 		$(".menuLeft").css("width", "340px");
