@@ -156,12 +156,11 @@ function resizePage() {
 	let height = window.innerHeight;
 
 	if (width < 1060) {
-
 		$(".topText").hide("slow");
 		$(".topLogo").css("width", "100%");
-		$("#topLogo").css("width", width - 200 + "px");
-		$("#test").css("top", (width / 10) + 28 + "px");
-		$("#test2").css("top", (width / 10) + 28 + "px");
+		$("#topLogo").css("width", (width - 200) + "px");
+		$("#test").css("top", (width / 10 + 28) + "px");
+		$("#test2").css("top", (width / 10 + 28) + "px");
 	}
 	else {
 		$(".topText").show("slow");
@@ -229,12 +228,16 @@ function resizePage() {
 	}
 
 	if (width < imgWidth) {
-		$(".ansatImg").css("width", width - 75 + "px");
+		$(".ansatImg").css("width", (width - 75) + "px");
 	}
 
 	if (width > imgWidth) {
-		if (1000 > width) { $(".ansatImg").css("width", "350px"); }
-		else { $(".ansatImg").css("width", "450px"); }
+		if (1000 > width) {
+			$(".ansatImg").css("width", "350px");
+		}
+		else {
+			$(".ansatImg").css("width", "450px");
+		}
 	}
 
 	if (width > minWidthContainerBig) {
