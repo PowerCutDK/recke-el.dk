@@ -1,24 +1,24 @@
-function removemenu() {
+function removeMenu() {
 	//$(".MenuBackgroundLeftInner").bind("mouseout", function() {
 	$(".bg").bind("mouseenter", function() {
 		$("#MenuBackgroundLeftInner").css("width", "50px");
 		$(".menuLeft").css("width", "115px");
-		imageresize();
+		resizePage();
 	});
 }
 
-function createmenu() {
+function createMenu() {
 	$(".menuLeft").bind("mouseover", function() {
 		$("#MenuBackgroundLeftInner").css("width", "350px");
 		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menu-text").show("slow");
 		$(".menuLeft").css("width", "340px");
-		removemenu();
+		removeMenu();
 		$(".menuLeft").unbind("mouseover");
 	});
 }
 
-function menuSelected() {
+function setMenuSelected() {
 	var arr = $(location).attr("pathname").split("/");
 	var arrr = arr[arr.length - 1].split(".");
 	var urlName = arrr[0];
@@ -29,34 +29,31 @@ function menuSelected() {
 	$(".nav-main").find("[id='" + urlName + "']").addClass("nav-main-Selected");
 }
 
-function imageresize() {
-	var LmobilWidth = 860;
-	var SmobilWidth = 700;
+function resizePage() {
+	var mobileWidth = 860;
 	var minWidth = 1675;
 	var imgWidth = 475;
-	var minHeight = 644;
-	var Width = 1000;
-	var Height = 1000;
-	var godkendWidth = 600;
-	var minWidthContainerBIG = 1390;
-	var MinMenuWidth = 1000;
+	var width = 1000;
+	var height = 1000;
+	var minWidthContainerBig = 1390;
+	var menuMinWidth = 1000;
 
 	if (typeof window.innerWidth != "undefined") {
-		Width = window.innerWidth;
-		Height = window.innerHeight;
+		width = window.innerWidth;
+		height = window.innerHeight;
 	}
 	else if (typeof document.documentElement != "undefined" && typeof document.documentElement.clientWidth != "undefined" && document.documentElement.clientWidth != 0) {
-		Width = document.documentElement.offsetWidth;
-		Height = document.documentElement.offsetHeight;
+		width = document.documentElement.offsetWidth;
+		height = document.documentElement.offsetHeight;
 	}
 
-	if (Width < 1060) {
+	if (width < 1060) {
 
 		$(".topText").hide("slow");
 		$(".topLogo").css("width", "100%");
-		$("#topLogo").css("width", Width - 200 + "px");
-		$("#test").css("top", (Width / 10) + 28 + "px");
-		$("#test2").css("top", (Width / 10) + 28 + "px");
+		$("#topLogo").css("width", width - 200 + "px");
+		$("#test").css("top", (width / 10) + 28 + "px");
+		$("#test2").css("top", (width / 10) + 28 + "px");
 	}
 	else {
 		$(".topText").show("slow");
@@ -64,7 +61,7 @@ function imageresize() {
 		$("#topLogo").css("max-width", "100%");
 	}
 
-	if (Width < LmobilWidth) {
+	if (width < mobileWidth) {
 		$(".topLogo").css("position", "absolute");
 		$(".header").css("position", "absolute");
 		$("#test2").css("position", "absolute");
@@ -123,26 +120,26 @@ function imageresize() {
 		</a>
 	`);
 
-	menuSelected();
+	setMenuSelected();
 
-	if (Width > minWidth) {
+	if (width > minWidth) {
 		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menuLeft").css("width", "340px");
 		$(".menu-text").show("slow");
 		$("#MenuBackgroundLeftInner").css("width", "340px");
 		$("#menu2").html("");
-		createmenu();
+		createMenu();
 	}
-	if ((Width > (minWidth - 475)) && (Width < minWidth)) {
+	if ((width > (minWidth - 475)) && (width < minWidth)) {
 		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menuLeft").css("width", "115px");
 		$("#menu2").html("");
-		createmenu();
+		createMenu();
 
 		$(".menu-text").hide();
 	}
 
-	if (Width < minWidth - 475) {
+	if (width < minWidth - 475) {
 		$("#MenuBackgroundLeftInner").hide("slow");
 		$("#menu2").html(`
 			<br /><br /><br />
@@ -202,10 +199,10 @@ function imageresize() {
 		$(".menuLeft").css("width", "340px");
 		$(".produkt-image").css("width", "75px");
 
-		//if (Width < 767) { $("html, body").animate({ scrollTop: 550 }, 2000); }
+		//if (width < 767) { $("html, body").animate({ scrollTop: 550 }, 2000); }
 		//else { $("html, body").animate({ scrollTop: 300 }, 2000); }
 
-		if (Width < 450) {
+		if (width < 450) {
 			$(".menu-text").addClass("MobileCss");
 			$(".menuLeft").css("width", "280px");
 			$(".lines").css("font-size", "45px");
@@ -214,31 +211,30 @@ function imageresize() {
 			$(".menu-text").removeClass("MobileCss");
 			$(".menuLeft").css("width", "340px");
 		}
-		menuSelected();
+		setMenuSelected();
 	}
 
-	if (Width < minWidthContainerBIG) {
+	if (width < minWidthContainerBig) {
 		$(".containerBIG").hide("slow");
 	}
 
-	if (Width < imgWidth) {
-		$(".ansatImg").css("width", Width - 75 + "px");
+	if (width < imgWidth) {
+		$(".ansatImg").css("width", width - 75 + "px");
 	}
 
-	if (Width > imgWidth) {
-		if (1000 > Width) { $(".ansatImg").css("width", "350px"); }
+	if (width > imgWidth) {
+		if (1000 > width) { $(".ansatImg").css("width", "350px"); }
 		else { $(".ansatImg").css("width", "450px"); }
 	}
 
-	if (Width > minWidthContainerBIG) {
+	if (width > minWidthContainerBig) {
 		$(".containerBIG").show("slow");
-		//$(".containerBIG").css("width",minWidthContainerBIG );
+		//$(".containerBIG").css("width",minWidthContainerBig );
 	}
 
-	if (Width < MinMenuWidth) {
-		var LocalUrl = location.href;
+	if (width < menuMinWidth) {
 		// $("#MenuBackground").hide();
-		// $("#Menu").css("width", Width + "px");
+		// $("#Menu").css("width", width + "px");
 		$("#kontakt").html(`Recke-El ApS<a href="tel:62 26 10 18">62 26 10 18</a> <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a>`);
 		$("#test2").html(`
 			<nav class="nav-main">
@@ -252,10 +248,10 @@ function imageresize() {
 				<a href="/">Forside</a>
 			</nav>
 		`);
-		menuSelected();
+		setMenuSelected();
 	}
 
-	if (Width > (MinMenuWidth)) {
+	if (width > (menuMinWidth)) {
 		$("#kontakt").html(`
 			<ul>
 				<li>Recke-El ApS</li>
@@ -276,11 +272,11 @@ function imageresize() {
 				<a href="/">Forside</a>
 			</nav>
 		`);
-		menuSelected();
+		setMenuSelected();
 		$(".nav-main").css("margin-top", "0px");
 	}
 
-	if (Height < 700) {
+	if (height < 700) {
 		$("#menu2").hide();
 		$("#MenuBackgroundLeft").css("position", "absolute");
 		$("#MenuBackgroundLeftInner").css("position", "absolute");
@@ -302,10 +298,10 @@ function imageresize() {
 	});
 };
 
-imageresize();
+resizePage();
 
 $(window).bind("resize", function() {
-	imageresize();
+	resizePage();
 });
 
 $(".menuItem").bind("mouseover", function() {
