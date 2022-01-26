@@ -148,8 +148,6 @@ $(window).resize(resizePage);
 function resizePage() {
 	let mobileWidth = 860;
 	let minWidth = 1675;
-	let imgWidth = 475;
-	let minWidthContainerBig = 1390;
 	let menuMinWidth = 1000;
 
 	let width = window.innerWidth;
@@ -159,7 +157,6 @@ function resizePage() {
 		$(".topText").hide("slow");
 		$(".topLogo").css("width", "100%");
 		$("#topLogo").css("width", (width - 200) + "px");
-		$("#test").css("top", (width / 10 + 28) + "px");
 		$("#test2").css("top", (width / 10 + 28) + "px");
 	}
 	else {
@@ -223,28 +220,6 @@ function resizePage() {
 		setMenuSelected();
 	}
 
-	if (width < minWidthContainerBig) {
-		$(".containerBIG").hide("slow");
-	}
-
-	if (width < imgWidth) {
-		$(".ansatImg").css("width", (width - 75) + "px");
-	}
-
-	if (width > imgWidth) {
-		if (1000 > width) {
-			$(".ansatImg").css("width", "350px");
-		}
-		else {
-			$(".ansatImg").css("width", "450px");
-		}
-	}
-
-	if (width > minWidthContainerBig) {
-		$(".containerBIG").show("slow");
-		//$(".containerBIG").css("width",minWidthContainerBig );
-	}
-
 	if (width < menuMinWidth) {
 		// $("#MenuBackground").hide();
 		// $("#Menu").css("width", width + "px");
@@ -272,8 +247,6 @@ function resizePage() {
 	}
 
 	$(".menuItem").mouseover(() => {
-		//let color = $(this).css("background-color");
-
 		$(this).css("background", "rgb(88, 60, 54)");
 		$(this).mouseout(() => {
 			$(".menuItem").css("background", "rgb(91, 183, 91)");
@@ -317,17 +290,9 @@ function setMenuSelected() {
 //////// Event handlers ////////
 
 $(".menuItem").mouseover(() => {
-	//let color = $(this).css("background-color");
 	$(this).css("background", "rgb(88, 60, 54)");
 	$(this).mouseout(() => {
 		$(".menuItem").css("background", "rgb(91, 183, 91)");
 		$(".menuItem").css("color", "white");
 	})
 });
-
-$(".top").click(() => {$("html, body").animate({ scrollTop: $(".home").offset().top }, 2000); });
-$(".en").click(() => { $("html, body").animate({ scrollTop: $("#en").offset().top }, 2000); });
-$(".to").click(() => { $("html, body").animate({ scrollTop: $("#to").offset().top }, 2000); });
-$(".tre").click(() => { $("html, body").animate({ scrollTop: $("#tre").offset().top }, 2000); });
-$(".fire").click(() => { $("html, body").animate({ scrollTop: $("#fire").offset().top }, 2000); });
-$(".bund").click(() => { $("html, body").animate({ scrollTop: $(document).height() }, 2000); });
