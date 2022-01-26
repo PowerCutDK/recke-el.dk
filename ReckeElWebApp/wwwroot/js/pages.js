@@ -202,9 +202,6 @@ function resizePage() {
 		$(".menuLeft").css("width", "340px");
 		$(".produkt-image").css("width", "75px");
 
-		//if (width < 767) { $("html, body").animate({ scrollTop: 550 }, 2000); }
-		//else { $("html, body").animate({ scrollTop: 300 }, 2000); }
-
 		if (width < 450) {
 			$(".menu-text").addClass("MobileCss");
 			$(".menuLeft").css("width", "280px");
@@ -217,8 +214,6 @@ function resizePage() {
 	}
 
 	if (width < menuMinWidth) {
-		// $("#MenuBackground").hide();
-		// $("#Menu").css("width", width + "px");
 		$("#kontakt").html(contactHtmlSingleLine);
 		$("#test2").html(contactHtml1);
 	}
@@ -262,7 +257,6 @@ function createMenu() {
 }
 
 function removeMenu() {
-	//$(".MenuBackgroundLeftInner").mouseout(() => {
 	$(".bg").mouseenter(() => {
 		$("#MenuBackgroundLeftInner").css("width", "50px");
 		$(".menuLeft").css("width", "115px");
@@ -275,7 +269,6 @@ function setMenuSelected() {
 	let arrr = arr[arr.length - 1].split(".");
 	let urlName = arrr[0];
 
-	//$('#"+urlName+"').addClass("selected_menu");
 	$("#MenuBackgroundLeftInner").find("[id='" + urlName + "']").addClass("menuSelected");
 	$("#menu2").find("[id='" + urlName + "']").addClass("menuSelected");
 	$(".nav-main").find("[id='" + urlName + "']").addClass("nav-main-Selected");
