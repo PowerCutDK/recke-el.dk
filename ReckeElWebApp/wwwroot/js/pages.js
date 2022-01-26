@@ -149,19 +149,11 @@ function resizePage() {
 	let mobileWidth = 860;
 	let minWidth = 1675;
 	let imgWidth = 475;
-	let width = 1000;
-	let height = 1000;
 	let minWidthContainerBig = 1390;
 	let menuMinWidth = 1000;
 
-	if (typeof window.innerWidth != "undefined") {
-		width = window.innerWidth;
-		height = window.innerHeight;
-	}
-	else if (typeof document.documentElement != "undefined" && typeof document.documentElement.clientWidth != "undefined" && document.documentElement.clientWidth != 0) {
-		width = document.documentElement.offsetWidth;
-		height = document.documentElement.offsetHeight;
-	}
+	let width = window.innerWidth;
+	let height = window.innerHeight;
 
 	if (width < 1060) {
 
