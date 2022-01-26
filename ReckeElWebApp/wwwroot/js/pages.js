@@ -178,8 +178,6 @@ function resizePage() {
 
 	$("#MenuBackgroundLeftInner").html(menuHtml1);
 
-	setMenuSelected();
-
 	if (width > minWidth) {
 		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menuLeft").css("width", "340px");
@@ -188,7 +186,7 @@ function resizePage() {
 		$("#menu2").html("");
 		createMenu();
 	}
-	if ((width > (minWidth - 475)) && (width < minWidth)) {
+	else if (width > (minWidth - 475)) {
 		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menuLeft").css("width", "115px");
 		$("#menu2").html("");
@@ -196,8 +194,7 @@ function resizePage() {
 
 		$(".menu-text").hide();
 	}
-
-	if (width < minWidth - 475) {
+	else {
 		$("#MenuBackgroundLeftInner").hide("slow");
 		$("#menu2").html(menuHtml2);
 
@@ -217,7 +214,6 @@ function resizePage() {
 			$(".menu-text").removeClass("MobileCss");
 			$(".menuLeft").css("width", "340px");
 		}
-		setMenuSelected();
 	}
 
 	if (width < menuMinWidth) {
@@ -225,13 +221,10 @@ function resizePage() {
 		// $("#Menu").css("width", width + "px");
 		$("#kontakt").html(contactHtmlSingleLine);
 		$("#test2").html(contactHtml1);
-		setMenuSelected();
 	}
-
-	if (width > (menuMinWidth)) {
+	else {
 		$("#kontakt").html(contactHtml2);
 		$("#test2").html(contactHtml3);
-		setMenuSelected();
 		$(".nav-main").css("margin-top", "0px");
 	}
 
@@ -253,6 +246,8 @@ function resizePage() {
 			$(".menuItem").css("color", "white");
 		})
 	});
+
+	setMenuSelected();
 };
 
 function createMenu() {
