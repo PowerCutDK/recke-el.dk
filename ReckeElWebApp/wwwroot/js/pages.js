@@ -1,4 +1,4 @@
-﻿function removemenu() {
+function removemenu() {
 	//$(".MenuBackgroundLeftInner").bind("mouseout", function() {
 	$(".bg").bind("mouseenter", function() {
 		$("#MenuBackgroundLeftInner").css("width", "50px");
@@ -15,7 +15,6 @@ function createmenu() {
 		$(".menuLeft").css("width", "340px");
 		removemenu();
 		$(".menuLeft").unbind("mouseover");
-		//alert("jeg er her nu");
 	});
 }
 
@@ -140,7 +139,6 @@ function imageresize() {
 		$("#menu2").html("");
 		createmenu();
 
-		//alert("jeg er her");
 		$(".menu-text").hide();
 	}
 
@@ -304,13 +302,11 @@ function imageresize() {
 	});
 };
 
-imageresize(); // Triggers when document first loads
+imageresize();
 
-$(window).bind("resize", function() { // Adjusts image when browser resized
+$(window).bind("resize", function() {
 	imageresize();
 });
-
-//if (1 == 1) { alert("test"); };
 
 $(".menuItem").bind("mouseover", function() {
 	//var color = $(this).css("background-color");
