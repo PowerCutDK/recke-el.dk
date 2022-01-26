@@ -266,7 +266,7 @@ function resizePage() {
 		$("#MenuBackgroundLeftInner").css("position", "absolute");
 	}
 	else {
-		$("#MenuBackgroundLef").css("position", "fixed");
+		$("#MenuBackgroundLeft").css("position", "fixed");
 		$("#MenuBackgroundLeftInner").css("position", "fixed");
 		$("#menu2").show();
 	}
