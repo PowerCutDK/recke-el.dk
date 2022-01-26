@@ -1,13 +1,12 @@
 //////// Variables ////////
 
-const contactHtmlSingleLine = `Recke-El ApS<a href="tel:62 26 10 18">62 26 10 18</a> <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a>`;
+const contactHtmlSingleLine = `Recke-El ApS <a href="tel:62 26 10 18">62 26 10 18</a> <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a>`;
 
 const contactHtml1 = `
 	<nav class="nav-main">
 		<a id="kontakt-os" href="kontakt">Kontakt</a>
 		<a> &#183; </a>
 		<a id="led" href="led">Ekspert i Led belysning</a>
-		<a> &#183; </a>
 		<a> &#183; </a>
 		<a id="om-os" href="om">Om os</a>
 		<a> &#183; </a>
