@@ -19,9 +19,9 @@ function createMenu() {
 }
 
 function setMenuSelected() {
-	var arr = $(location).attr("pathname").split("/");
-	var arrr = arr[arr.length - 1].split(".");
-	var urlName = arrr[0];
+	let arr = $(location).attr("pathname").split("/");
+	let arrr = arr[arr.length - 1].split(".");
+	let urlName = arrr[0];
 
 	//$('#"+urlName+"').addClass("selected_menu");
 	$("#MenuBackgroundLeftInner").find("[id='" + urlName + "']").addClass("menuSelected");
@@ -30,13 +30,13 @@ function setMenuSelected() {
 }
 
 function resizePage() {
-	var mobileWidth = 860;
-	var minWidth = 1675;
-	var imgWidth = 475;
-	var width = 1000;
-	var height = 1000;
-	var minWidthContainerBig = 1390;
-	var menuMinWidth = 1000;
+	let mobileWidth = 860;
+	let minWidth = 1675;
+	let imgWidth = 475;
+	let width = 1000;
+	let height = 1000;
+	let minWidthContainerBig = 1390;
+	let menuMinWidth = 1000;
 
 	if (typeof window.innerWidth != "undefined") {
 		width = window.innerWidth;
@@ -288,7 +288,7 @@ function resizePage() {
 	}
 
 	$(".menuItem").bind("mouseover", function() {
-		//var color = $(this).css("background-color");
+		//let color = $(this).css("background-color");
 
 		$(this).css("background", "rgb(88, 60, 54)");
 		$(this).bind("mouseout", function() {
@@ -305,7 +305,7 @@ $(window).bind("resize", function() {
 });
 
 $(".menuItem").bind("mouseover", function() {
-	//var color = $(this).css("background-color");
+	//let color = $(this).css("background-color");
 	$(this).css("background", "rgb(88, 60, 54)");
 	$(this).bind("mouseout", function() {
 		$(".menuItem").css("background", "rgb(91, 183, 91)");
