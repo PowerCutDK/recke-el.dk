@@ -142,8 +142,8 @@ const menuHtml2 = `
 
 
 function removeMenu() {
-	//$(".MenuBackgroundLeftInner").bind("mouseout", function() {
-	$(".bg").bind("mouseenter", function() {
+	//$(".MenuBackgroundLeftInner").mouseout(() => {
+	$(".bg").mouseenter(() => {
 		$("#MenuBackgroundLeftInner").css("width", "50px");
 		$(".menuLeft").css("width", "115px");
 		resizePage();
@@ -151,7 +151,7 @@ function removeMenu() {
 }
 
 function createMenu() {
-	$(".menuLeft").bind("mouseover", function() {
+	$(".menuLeft").mouseover(() => {
 		$("#MenuBackgroundLeftInner").css("width", "350px");
 		$("#MenuBackgroundLeftInner").show("slow");
 		$(".menu-text").show("slow");
@@ -303,11 +303,11 @@ function resizePage() {
 		$("#menu2").show();
 	}
 
-	$(".menuItem").bind("mouseover", function() {
+	$(".menuItem").mouseover(() => {
 		//let color = $(this).css("background-color");
 
 		$(this).css("background", "rgb(88, 60, 54)");
-		$(this).bind("mouseout", function() {
+		$(this).mouseout(() => {
 			$(".menuItem").css("background", "rgb(91, 183, 91)");
 			$(".menuItem").css("color", "white");
 		})
@@ -316,22 +316,20 @@ function resizePage() {
 
 resizePage();
 
-$(window).bind("resize", function() {
-	resizePage();
-});
+$(window).resize(resizePage);
 
-$(".menuItem").bind("mouseover", function() {
+$(".menuItem").mouseover(() => {
 	//let color = $(this).css("background-color");
 	$(this).css("background", "rgb(88, 60, 54)");
-	$(this).bind("mouseout", function() {
+	$(this).mouseout(() => {
 		$(".menuItem").css("background", "rgb(91, 183, 91)");
 		$(".menuItem").css("color", "white");
 	})
 });
 
-$(".top").click(function() { $("html, body").animate({ scrollTop: $(".home").offset().top }, 2000); });
-$(".en").click(function() { $("html, body").animate({ scrollTop: $("#en").offset().top }, 2000); });
-$(".to").click(function() { $("html, body").animate({ scrollTop: $("#to").offset().top }, 2000); });
-$(".tre").click(function() { $("html, body").animate({ scrollTop: $("#tre").offset().top }, 2000); });
-$(".fire").click(function() { $("html, body").animate({ scrollTop: $("#fire").offset().top }, 2000); });
-$(".bund").click(function() { $("html, body").animate({ scrollTop: $(document).height() }, 2000); });
+$(".top").click(() => {$("html, body").animate({ scrollTop: $(".home").offset().top }, 2000); });
+$(".en").click(() => { $("html, body").animate({ scrollTop: $("#en").offset().top }, 2000); });
+$(".to").click(() => { $("html, body").animate({ scrollTop: $("#to").offset().top }, 2000); });
+$(".tre").click(() => { $("html, body").animate({ scrollTop: $("#tre").offset().top }, 2000); });
+$(".fire").click(() => { $("html, body").animate({ scrollTop: $("#fire").offset().top }, 2000); });
+$(".bund").click(() => { $("html, body").animate({ scrollTop: $(document).height() }, 2000); });
