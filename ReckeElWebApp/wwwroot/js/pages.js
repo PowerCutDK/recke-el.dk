@@ -154,13 +154,13 @@ function resizePage() {
 	let height = window.innerHeight;
 
 	if (width < 1060) {
-		$(".topText").hide("slow");
+		$(".topText").hide();
 		$(".topLogo").css("width", "100%");
 		$("#topLogo").css("width", (width - 200) + "px");
 		$("#test2").css("top", (width / 10 + 28) + "px");
 	}
 	else {
-		$(".topText").show("slow");
+		$(".topText").show();
 		$(".topLogo").css("width", "70%");
 		$("#topLogo").css("max-width", "100%");
 	}
@@ -179,15 +179,15 @@ function resizePage() {
 	$("#MenuBackgroundLeftInner").html(menuHtml1);
 
 	if (width > minWidth) {
-		$("#MenuBackgroundLeftInner").show("slow");
+		$("#MenuBackgroundLeftInner").show();
 		$(".menuLeft").css("width", "340px");
-		$(".menu-text").show("slow");
+		$(".menu-text").show();
 		$("#MenuBackgroundLeftInner").css("width", "340px");
 		$("#menu2").html("");
 		createMenu();
 	}
 	else if (width > (minWidth - 475)) {
-		$("#MenuBackgroundLeftInner").show("slow");
+		$("#MenuBackgroundLeftInner").show();
 		$(".menuLeft").css("width", "115px");
 		$("#menu2").html("");
 		createMenu();
@@ -195,7 +195,7 @@ function resizePage() {
 		$(".menu-text").hide();
 	}
 	else {
-		$("#MenuBackgroundLeftInner").hide("slow");
+		$("#MenuBackgroundLeftInner").hide();
 		$("#menu2").html(menuHtml2);
 
 		$(".pil-right").css("width", "21px");
@@ -248,8 +248,8 @@ function resizePage() {
 function createMenu() {
 	$(".menuLeft").mouseover(() => {
 		$("#MenuBackgroundLeftInner").css("width", "350px");
-		$("#MenuBackgroundLeftInner").show("slow");
-		$(".menu-text").show("slow");
+		$("#MenuBackgroundLeftInner").show();
+		$(".menu-text").show();
 		$(".menuLeft").css("width", "340px");
 		removeMenu();
 		$(".menuLeft").unbind("mouseover");
