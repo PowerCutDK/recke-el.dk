@@ -141,36 +141,9 @@ const menuHtml2 = `
 
 
 
-function removeMenu() {
-	//$(".MenuBackgroundLeftInner").mouseout(() => {
-	$(".bg").mouseenter(() => {
-		$("#MenuBackgroundLeftInner").css("width", "50px");
-		$(".menuLeft").css("width", "115px");
-		resizePage();
-	});
-}
+resizePage();
 
-function createMenu() {
-	$(".menuLeft").mouseover(() => {
-		$("#MenuBackgroundLeftInner").css("width", "350px");
-		$("#MenuBackgroundLeftInner").show("slow");
-		$(".menu-text").show("slow");
-		$(".menuLeft").css("width", "340px");
-		removeMenu();
-		$(".menuLeft").unbind("mouseover");
-	});
-}
-
-function setMenuSelected() {
-	let arr = $(location).attr("pathname").split("/");
-	let arrr = arr[arr.length - 1].split(".");
-	let urlName = arrr[0];
-
-	//$('#"+urlName+"').addClass("selected_menu");
-	$("#MenuBackgroundLeftInner").find("[id='" + urlName + "']").addClass("menuSelected");
-	$("#menu2").find("[id='" + urlName + "']").addClass("menuSelected");
-	$(".nav-main").find("[id='" + urlName + "']").addClass("nav-main-Selected");
-}
+$(window).resize(resizePage);
 
 function resizePage() {
 	let mobileWidth = 860;
@@ -314,9 +287,39 @@ function resizePage() {
 	});
 };
 
-resizePage();
+function createMenu() {
+	$(".menuLeft").mouseover(() => {
+		$("#MenuBackgroundLeftInner").css("width", "350px");
+		$("#MenuBackgroundLeftInner").show("slow");
+		$(".menu-text").show("slow");
+		$(".menuLeft").css("width", "340px");
+		removeMenu();
+		$(".menuLeft").unbind("mouseover");
+	});
+}
 
-$(window).resize(resizePage);
+function removeMenu() {
+	//$(".MenuBackgroundLeftInner").mouseout(() => {
+	$(".bg").mouseenter(() => {
+		$("#MenuBackgroundLeftInner").css("width", "50px");
+		$(".menuLeft").css("width", "115px");
+		resizePage();
+	});
+}
+
+function setMenuSelected() {
+	let arr = $(location).attr("pathname").split("/");
+	let arrr = arr[arr.length - 1].split(".");
+	let urlName = arrr[0];
+
+	//$('#"+urlName+"').addClass("selected_menu");
+	$("#MenuBackgroundLeftInner").find("[id='" + urlName + "']").addClass("menuSelected");
+	$("#menu2").find("[id='" + urlName + "']").addClass("menuSelected");
+	$(".nav-main").find("[id='" + urlName + "']").addClass("nav-main-Selected");
+}
+
+
+//////// Event handlers ////////
 
 $(".menuItem").mouseover(() => {
 	//let color = $(this).css("background-color");
