@@ -2,7 +2,7 @@
 
 const contactHtmlSingleLine = `Recke-El ApS <a href="tel:62 26 10 18">62 26 10 18</a> <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a>`;
 
-const contactHtml1 = `
+const headerNavHtml = `
 	<nav class="nav-main">
 		<a id="kontakt-os" href="kontakt">Kontakt</a>
 		<a> &#183; </a>
@@ -14,7 +14,7 @@ const contactHtml1 = `
 	</nav>
 	`;
 
-const contactHtml2 = `
+const contactHtml = `
 	<ul>
 		<li>Recke-El ApS</li>
 		<li>Stationsvej 54</li>
@@ -22,18 +22,6 @@ const contactHtml2 = `
 		<li>62 26 10 18</li>
 		<li><a href="mailo:mail@recke-el.dk">mail@recke-el.dk</a></li>
 	</ul>
-	`;
-
-const contactHtml3 = `
-	<nav class="nav-main">
-		<a id="kontakt-os" href="kontakt">Kontakt</a>
-		<a> &#183; </a>
-		<a id="led" href="led">Ekspert i Led belysning</a>
-		<a> &#183; </a>
-		<a id="om-os" href="om">Om os</a>
-		<a> &#183; </a>
-		<a href="/">Forside</a>
-	</nav>
 	`;
 
 const menuHtml1 = `
@@ -214,13 +202,13 @@ function resizePage() {
 
 	if (width < menuMinWidth) {
 		$("#kontakt").html(contactHtmlSingleLine);
-		$("#test2").html(contactHtml1);
 	}
 	else {
-		$("#kontakt").html(contactHtml2);
-		$("#test2").html(contactHtml3);
+		$("#kontakt").html(contactHtml);
 		$(".nav-main").css("margin-top", "0px");
 	}
+
+	$("#test2").html(headerNavHtml);
 
 	if (height < 700) {
 		$("#menu2").hide();
