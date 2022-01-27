@@ -144,7 +144,7 @@ function resizePage() {
 		$(".topText").hide();
 		$(".topLogo").css("width", "100%");
 		$("#topLogo").css("width", (width - 200) + "px");
-		$("#test2").css("top", (width / 10 + 28) + "px");
+		$("#header-nav").css("top", (width / 10 + 28) + "px");
 	}
 	else {
 		$(".topText").show();
@@ -155,12 +155,12 @@ function resizePage() {
 	if (width < mobileWidth) {
 		$(".topLogo").css("position", "absolute");
 		$(".header").css("position", "absolute");
-		$("#test2").css("position", "absolute");
+		$("#header-nav").css("position", "absolute");
 	}
 	else {
 		$(".topLogo").css("position", "fixed");
 		$(".header").css("position", "fixed");
-		$("#test2").css("position", "fixed");
+		$("#header-nav").css("position", "fixed");
 	}
 
 	$("#MenuBackgroundLeftInner").html(navSideHtml);
@@ -208,7 +208,7 @@ function resizePage() {
 		$(".nav-main").css("margin-top", "0px");
 	}
 
-	$("#test2").html(headerNavHtml);
+	$("#header-nav").html(headerNavHtml);
 
 	if (height < 700) {
 		$("#menu2").hide();

@@ -194,7 +194,7 @@ a {
 	font-weight: bold;
 }
 
-#test2 {
+#header-nav {
 	z-index: 999999;
 	opacity: 1;
 	position: fixed;
