@@ -16,47 +16,38 @@ const navSideHtml = `
 	<a id="el_installation" class="menuLeft" href="elinstallation">
 		<img src="/images/elinstallation.jpg" class="produkt-image">
 		<h5 class="menu-text">El Installation</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="Landbrug" class="menuLeft" href="landbrug">
 		<img src="/images/Landbrug.jpg" class="produkt-image">
 		<h5 class="menu-text">Landbrug</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="Industri" class="menuLeft" href="industri">
 		<img src="/images/industri.jpg" class="produkt-image">
 		<h5 class="menu-text">Industri</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="belysning" class="menuLeft" href="belysning">
 		<img src="/images/belysning.jpg" class="produkt-image">
 		<h5 class="menu-text">Belysning</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="Energioptimering" class="menuLeft" href="energioptimering">
 		<img src="/images/energioptimering.jpg" class="produkt-image">
 		<h5 class="menu-text">Energioptimering</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="Eleftersyn" class="menuLeft" href="eleftersyn">
 		<img src="/images/elsyn.jpg" class="produkt-image">
 		<h5 class="menu-text">Eleftersyn</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="it_data" class="menuLeft" href="it-data">
 		<img src="/images/it-data.jpg" class="produkt-image">
 		<h5 class="menu-text">Tele IT & Netværk</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="hvidevarer" class="menuLeft" href="hvidevarer">
 		<img src="/images/hvidevarer.jpg" class="produkt-image">
 		<h5 class="menu-text">Hvidevarer</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	<a id="butik" class="menuLeft" href="butik">
 		<img src="/images/butik.jpg" class="produkt-image">
 		<h5 class="menu-text">Butik</h5>
-		<img src="/images/mand.png" class="pil-right">
 	</a>
 	`;
 
@@ -66,49 +57,40 @@ const navTwoColumnHtml = `
 		<a id="el_installation" class="menuLeft" href="elinstallation">
 			<img src="/images/elinstallation.jpg" class="produkt-image">
 			<h5 class="menu-text">El Installation</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 		<a id="Landbrug" class="menuLeft" href="landbrug">
 			<img src="/images/Landbrug.jpg" class="produkt-image">
 			<h5 class="menu-text">Landbrug</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 		<a id="Industri" class="menuLeft" href="industri">
 			<img src="/images/industri.jpg" class="produkt-image">
 			<h5 class="menu-text">Industri</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 		<a id="hvidevarer" class="menuLeft" href="hvidevarer">
 			<img src="/images/hvidevarer.jpg" class="produkt-image">
 			<h5 class="menu-text">Hvidevarer</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 		<a id="butik" class="menuLeft" href="butik">
 			<img src="/images/butik.jpg" class="produkt-image">
 			<h5 class="menu-text">Butik</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 	</div>
 	<div class="eight columns">
 		<a id="Energioptimering" class="menuLeft" href="energioptimering">
 			<img src="/images/energioptimering.jpg" class="produkt-image">
 			<h5 class="menu-text">Energioptimering</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 		<a id="Eleftersyn" class="menuLeft" href="eleftersyn">
 			<img src="/images/elsyn.jpg" class="produkt-image">
 			<h5 class="menu-text">Eleftersyn</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 		<a id="belysning" class="menuLeft" href="belysning">
 			<img src="/images/belysning.jpg" class="produkt-image">
 			<h5 class="menu-text">Belysning</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 		<a id="it_data" class="menuLeft" href="it-data">
 			<img src="/images/it-data.jpg" class="produkt-image">
 			<h5 class="menu-text">Tele IT & Netværk</h5>
-			<img src="/images/mand.png" class="pil-right">
 		</a>
 	</div>
 	<div class="clear"></div>
