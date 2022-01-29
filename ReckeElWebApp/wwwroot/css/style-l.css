@@ -1,4 +1,4 @@
-﻿.eight img {
+.eight img {
 	width: inherit;
 	border-radius: 5px 5px 5px 5px;
 }
@@ -86,17 +86,6 @@
 	TOP: 180px;
 	left: 0px;
 }
-
-#kontakt ul li {
-	display: inline;
-	border-right: 1px solid #e6e6e6;
-	padding: 6px 26px 8px 26px;
-	margin: 0;
-}
-
-	#kontakt ul li:first-child {
-		border-left: 1px solid #e6e6e6;
-	}
 
 a {
 	cursor: pointer
@@ -228,5 +217,39 @@ a {
 
 	.hide-above-1000 {
 		display: none;
+	}
+}
+
+
+/* Footer */
+
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 147px;
+}
+
+	footer ul {
+		margin: 0;
+		display: flex;
+		list-style-type: none;
+	}
+	footer li {
+		display: flex;
+		align-items: center;
+		height: 34px;
+		padding: 0 10px;
+		white-space: nowrap;
+	}
+
+@media (min-width: 1000px) {
+	footer li {
+		border-right: 1px solid #e6e6e6;
+		padding: 0 26px;
+	}
+
+	footer li:first-child {
+		border-left: 1px solid #e6e6e6;
 	}
 }
