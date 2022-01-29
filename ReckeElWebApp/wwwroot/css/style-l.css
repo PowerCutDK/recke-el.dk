@@ -210,3 +210,23 @@ a {
 	right: 0px;
 	top: 120px;
 }
+
+/* Teis */
+
+.display-above-1000 {
+	display: none;
+}
+
+.hide-above-1000 {
+	display: block;
+}
+
+@media (min-width: 1000px){
+	.display-above-1000 {
+		display: block;
+	}
+
+	.hide-above-1000 {
+		display: none;
+	}
+}

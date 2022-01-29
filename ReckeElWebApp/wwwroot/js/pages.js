@@ -1,7 +1,5 @@
 //////// Variables ////////
 
-const contactHtmlSingleLine = `Recke-El ApS <a href="tel:62 26 10 18">62 26 10 18</a> <a href="mailto:mail@recke-el.dk">mail@recke-el.dk</a>`;
-
 const headerNavHtml = `
 	<nav class="nav-main">
 		<a id="kontakt-os" href="kontakt">Kontakt</a>
@@ -12,16 +10,6 @@ const headerNavHtml = `
 		<a> &#183; </a>
 		<a href="/">Forside</a>
 	</nav>
-	`;
-
-const contactHtml = `
-	<ul>
-		<li>Recke-El ApS</li>
-		<li>Stationsvej 54</li>
-		<li>5771 Stenstrup</li>
-		<li>62 26 10 18</li>
-		<li><a href="mailo:mail@recke-el.dk">mail@recke-el.dk</a></li>
-	</ul>
 	`;
 
 const navSideHtml = `
@@ -135,7 +123,6 @@ $(window).resize(resizePage);
 function resizePage() {
 	const mobileWidth = 860;
 	const minWidth = 1675;
-	const menuMinWidth = 1000;
 
 	let width = window.innerWidth;
 	let height = window.innerHeight;
@@ -198,14 +185,6 @@ function resizePage() {
 			$(".menu-text").removeClass("MobileCss");
 			$(".menuLeft").css("width", "340px");
 		}
-	}
-
-	if (width < menuMinWidth) {
-		$("#kontakt").html(contactHtmlSingleLine);
-	}
-	else {
-		$("#kontakt").html(contactHtml);
-		$(".nav-main").css("margin-top", "0px");
 	}
 
 	$("#header-nav").html(headerNavHtml);
