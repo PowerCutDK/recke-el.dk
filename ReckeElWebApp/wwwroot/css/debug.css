@@ -8,15 +8,24 @@
 		outline: 2px solid rgb(0, 255, 33) !important;
 	}
 
-#debug-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: 0px;
-	padding: 0px;
-	outline-offset: -5px !important;
-	outline: 5px solid rgb(0, 148, 255) !important;
-	pointer-events: none;
-}
+	.debug-enabled #debug-overlay {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		margin: 0px;
+		padding: 0px;
+		outline-offset: -5px !important;
+		outline: 5px solid rgb(0, 148, 255) !important;
+		pointer-events: none;
+	}
+
+	.debug-label {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 30px;
+		height: 10px;
+		background-color: black;
+	}

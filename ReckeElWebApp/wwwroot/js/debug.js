@@ -1,11 +1,14 @@
-﻿let gridIsOn = false;
+﻿//import Label from './debuglabel.js';
+
+let gridIsOn = false;
 let hoverElement;
 //let debugOverlay = document.createElement('div');
 //debugOverlay.id = "debug-overlay";
+//const label = new Label();
 
 function toggleDebug() {
 	if (!gridIsOn) {
-		$("body").addClass("debug-enabled");
+		document.body.classList.add("debug-enabled");
 		gridIsOn = true;
 		//document.body.appendChild(debugOverlay);
 		window.addEventListener("mouseover", onMouseOver);
@@ -16,7 +19,7 @@ function toggleDebug() {
 		onMouseOver({ target: mouseOverElement });
 	}
 	else {
-		$("body").removeClass("debug-enabled");
+		document.body.classList.remove("debug-enabled");
 		gridIsOn = false;
 		//debugOverlay.remove();
 		window.removeEventListener("mouseover", onMouseOver);	}
@@ -34,6 +37,7 @@ function onMouseOver(event) {
 	const selectorString = getSelectorString(hoverElement);
 	console.log(selectorString);
 	hoverElement.classList.add("debug-hover");
+	//label.update(hoverElement);
 }
 
 function getSelectorString(element) {
