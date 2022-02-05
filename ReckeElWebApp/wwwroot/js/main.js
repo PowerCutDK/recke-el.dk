@@ -11,12 +11,12 @@ function resizePage() {
 	let width = window.innerWidth; // document.documentElement.offsetWidth;
 
 	if (width < minWidth) {
-		$(".topText").hide();
+		$(".header-text").hide();
 		$(".topLogo").css("width", "100%");
 		$("#topLogo").css("width", width + "px");
 	}
 	else {
-		$(".topText").show();
+		$(".header-text").show();
 		$(".topLogo").css("width", "70%");
 	}
 

@@ -33,7 +33,7 @@ h1 {
 	color: White;
 }
 
-.topText {
+.header-text {
 	background-color: Transparent;
 	height: 160px;
 	overflow: hidden;
@@ -46,21 +46,21 @@ h1 {
 	text-align: right;
 }
 
-.hedder1 {
+.header-1 {
 	font-family: Arial;
 	color: Black;
 	font-size: 30px;
 	font-weight: bold;
 }
 
-.hedder2 {
+.header-2 {
 	font-family: Arial;
 	color: Black;
 	font-size: 27px;
 	font-weight: bold;
 }
 
-.hedder3 {
+.header-3 {
 	font-family: Arial;
 	color: Black;
 	font-size: 21px;
