@@ -1,17 +1,5 @@
 //////// Variables ////////
 
-const headerNavHtml = `
-	<nav class="nav-main">
-		<a id="kontakt-os" href="kontakt">Kontakt</a>
-		<a> &#183; </a>
-		<a id="led" href="led">Ekspert i Led belysning</a>
-		<a> &#183; </a>
-		<a id="om-os" href="om">Om os</a>
-		<a> &#183; </a>
-		<a href="/">Forside</a>
-	</nav>
-	`;
-
 const navSideHtml = `
 	<a id="el_installation" class="menuLeft" href="elinstallation">
 		<img src="/images/elinstallation.jpg" class="produkt-image">
@@ -168,8 +156,6 @@ function resizePage() {
 			$(".menuLeft").css("width", "340px");
 		}
 	}
-
-	$("#header-nav").html(headerNavHtml);
 
 	if (height < 700) {
 		$("#menu2").hide();
