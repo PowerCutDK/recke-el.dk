@@ -91,51 +91,8 @@ h1 {
 #topBG {
 	width: 100%;
 	background-color: White;
-	/*border-style:solid;
-	border-bottom-color:White;
-	border-bottom-width:1px;
-	border-top-width:1px;*/
 	position: relative;
 	top: 160px;
-}
-
-.separator1 {
-	width: 100%;
-	height: 500px;
-	position: relative;
-}
-
-p.separator {
-	font-size: 30px;
-	font-weight: 600;
-	font-style: italic;
-	color: #fff;
-	line-height: 38px;
-	text-transform: uppercase;
-	position: relative;
-	z-index: 200;
-	text-align: center;
-	padding-top: 240px;
-}
-
-.separator1 .bg {
-	background-size: cover !important;
-	--webkit-background-size: cover !important;
-	margin: 0 auto;
-	padding: 0;
-	position: absolute;
-	z-index: 200;
-	width: 100%;
-	height: 500px;
-}
-
-.separator1 .bg6 {
-	background: url(../images/bg3.jpg) repeat center;
-}
-
-.separator1 .bg1 {
-	background: url(../images/bg4.jpg) repeat center;
-	z-index: 500;
 }
 
 .indhold {
