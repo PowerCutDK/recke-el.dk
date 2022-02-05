@@ -16,9 +16,6 @@
 	#Nav
 	#Intro
 	#Work
-	#Services
-	#About
-	#Contact
 	#Media Queries
 	#Font-Face */
 
@@ -223,54 +220,6 @@ p.separator {
 		background: url(../images/butik-1.jpg) repeat center;
 	}
 
-/* #Nav
-================================================== 
-
-nav {
-	background: #fff;
-	width: 100%;
-	position: relative;
-	z-index: 1000;
-	text-align: center;
-	height: 40px;
-	-webkit-box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
-	box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
-}
-
-
-nav ul {
-	padding-top: 10px;
-}
-
-nav ul li {
-	display: inline;
-	border-right: 1px solid #e6e6e6;
-	padding: 6px 26px 8px 26px;
-	margin: 0;
-}
-
-nav ul li:first-child {
-	border-left: 1px solid #e6e6e6;
-}
-
-nav a {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 16px;
-	color: #515151;
-	font-weight: 300;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
-nav a:visited {
-	color: #515151;
-}
-
-nav a:hover {
-	color: #000;
-}
-
-*/
 
 /* #Intro
 ================================================== */
@@ -301,48 +250,9 @@ a.selected {
 	color: #fff;
 }
 
-/* expanded portfolio item */
-
-
-/* #Services
-================================================== */
-
-#services {
-	background: url(../images/bg-dark.jpg) repeat;
-	position: relative;
-	z-index: 300;
-	padding-top: 40px;
-	padding-bottom: 40px;
-	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
-	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
-}
-
-
-/* #Contact
-================================================== */
-
-#contact {
-	background: url(../images/bg-dark.jpg) repeat;
-	position: relative;
-	z-index: 300;
-	padding-top: 20px;
-	-webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
-	box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
-}
-
-	#contact a {
-		color: #FFF;
-		text-decoration: none;
-	}
-
 
 /* #Wordpress related css
 ================================================== */
-
-.page-template-blog-php h2, .category h2 {
-	margin-top: 60px;
-	margin-bottom: 60px;
-}
 
 @media (max-width: 960px) {
 
@@ -373,49 +283,6 @@ a.selected {
 
 }
 
-
-/* All Mobile Sizes (devices and browser) 
-	@media only screen and (max-width: 767px) {
-		nav a {
-			font-size: 12px !important;
-		}
-		nav ul li {
-			padding-left: 15px;
-			padding-right: 15px;
-			line-height: 33px;
-		}
-		nav ul {
-			padding-top: 0;
-		}
-	}
-*/
-
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) 
-	@media only screen and (min-width: 480px) and (max-width: 767px) {
-		nav a {
-			font-size: 12px !important;
-		}
-		 h1 {
-		   font-size: 70px !important;
-		   margin-bottom: 20px;
-		  }
-		  
-		  h1.small {
-		   font-size: 40px !important;
-		   margin-bottom: 20px;
-		  }
-		  
-		  .title p {
-		   font-size: 20px !important;
-		   line-height: 28px;
-		  }
-		  
-		  nav ul li {
-		   padding-left: 10px;
-		   padding-right: 10px;
-		  }
-	}
-*/
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 1100px) {

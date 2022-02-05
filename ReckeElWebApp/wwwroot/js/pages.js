@@ -142,7 +142,6 @@ function resizePage() {
 		$("#MenuBackgroundLeftInner").hide();
 		$("#menu2").html(navTwoColumnHtml);
 
-		$(".pil-right").css("width", "21px");
 		$(".menuLeft").css("width", "340px");
 		$(".produkt-image").css("width", "75px");
 

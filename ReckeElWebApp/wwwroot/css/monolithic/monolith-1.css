@@ -476,21 +476,3 @@ a {
 		.header a:hover {
 			text-decoration: underline
 		}
-
-	.header .nav-main a, .header .nav-sub a {
-		position: relative;
-		color: #004578
-	}
-
-	.header .nav-main ul, .header .nav-sub ul {
-		margin: 0;
-		padding: 2em 0 0
-	}
-
-	.header .nav-main li, .header .nav-sub li {
-		list-style: none
-	}
-
-	.header .nav-sub {
-		background: rgba(0,0,0,0.3)
-	}
