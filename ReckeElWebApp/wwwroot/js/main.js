@@ -12,20 +12,20 @@ function resizePage() {
 
 	if (width < minWidth) {
 		$(".header-text").hide();
-		$(".topLogo").css("width", "100%");
-		$("#topLogo").css("width", width + "px");
+		$(".header-logo").css("width", "100%");
+		$("#header-logo").css("width", width + "px");
 	}
 	else {
 		$(".header-text").show();
-		$(".topLogo").css("width", "70%");
+		$(".header-logo").css("width", "70%");
 	}
 
 	if (width < mobileWidth) {
-		$(".topLogo").css("position", "absolute");
+		$(".header-logo").css("position", "absolute");
 		$(".header").css("position", "absolute");
 	}
 	else {
-		$(".topLogo").css("position", "fixed");
+		$(".header-logo").css("position", "fixed");
 		$(".header").css("position", "fixed");
 	}
 };

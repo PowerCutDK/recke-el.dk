@@ -99,23 +99,23 @@ function resizePage() {
 
 	if (width < 1060) {
 		$(".header-text").hide();
-		$(".topLogo").css("width", "100%");
-		$("#topLogo").css("width", (width - 200) + "px");
+		$(".header-logo").css("width", "100%");
+		$("#header-logo").css("width", (width - 200) + "px");
 		$("#header-nav").css("top", (width / 10 + 28) + "px");
 	}
 	else {
 		$(".header-text").show();
-		$(".topLogo").css("width", "70%");
-		$("#topLogo").css("max-width", "100%");
+		$(".header-logo").css("width", "70%");
+		$("#header-logo").css("max-width", "100%");
 	}
 
 	if (width < mobileWidth) {
-		$(".topLogo").css("position", "absolute");
+		$(".header-logo").css("position", "absolute");
 		$(".header").css("position", "absolute");
 		$("#header-nav").css("position", "absolute");
 	}
 	else {
-		$(".topLogo").css("position", "fixed");
+		$(".header-logo").css("position", "fixed");
 		$(".header").css("position", "fixed");
 		$("#header-nav").css("position", "fixed");
 	}
