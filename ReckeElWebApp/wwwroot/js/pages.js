@@ -110,13 +110,13 @@ function resizePage() {
 	let height = window.innerHeight;
 
 	if (width < 1060) {
-		$(".topText").hide();
+		$(".header-text").hide();
 		$(".topLogo").css("width", "100%");
 		$("#topLogo").css("width", (width - 200) + "px");
 		$("#header-nav").css("top", (width / 10 + 28) + "px");
 	}
 	else {
-		$(".topText").show();
+		$(".header-text").show();
 		$(".topLogo").css("width", "70%");
 		$("#topLogo").css("max-width", "100%");
 	}

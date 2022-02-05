@@ -143,7 +143,7 @@
 	opacity: 0.8;
 }
 
-.topText {
+.header-text {
 	background-color: Transparent;
 	height: 160px;
 	overflow: hidden;
@@ -156,7 +156,7 @@
 	text-align: right;
 }
 
-.hedder1 {
+.line-1 {
 	font-family: Arial;
 	color: Black;
 	font-size: 30px;
@@ -165,14 +165,14 @@
 	padding-top: 5px;
 }
 
-.hedder2 {
+.line-2 {
 	font-family: Arial;
 	color: Black;
 	font-size: 27px;
 	font-weight: bold;
 }
 
-.hedder3 {
+.line-3 {
 	font-family: Arial;
 	color: Black;
 	font-size: 21px;
