@@ -44,6 +44,15 @@ html {
 	color: #1a1a1a;
 }
 
+body {
+	font-size: 1em;
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+	background: #fff;
+	font-family: "Open Sans",Sans-serif;
+	position: relative;
+}
+
 a {
 	color: inherit;
 	text-decoration: none;
@@ -92,15 +101,6 @@ img {
 table {
 	border-collapse: collapse;
 	border-spacing: 0
-}
-
-body {
-	font-size: 1em;
-	line-height: 1.4;
-	-webkit-font-smoothing: antialiased;
-	background: #fff;
-	font-family: "Open Sans",Sans-serif;
-	position: relative;
 }
 
 ::selection {
@@ -296,7 +296,7 @@ a[href^=tel] {
 	background-color: #feead7
 }
 
-.section-page__header, .page__header {
+.section-page__header {
 	margin-top: 2em;
 	text-transform: uppercase;
 	font-family: "arial";
@@ -487,11 +487,6 @@ footer {
 	.slim-footer {
 		position: relative
 	}
-
-		.slim-footer .installatoer-login, .slim-footer .co2-neutral {
-			margin: 1.7em auto;
-			text-align: center
-		}
 
 	.section-box {
 		width: 100%;
