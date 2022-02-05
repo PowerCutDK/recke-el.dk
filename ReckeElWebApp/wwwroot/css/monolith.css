@@ -60,45 +60,12 @@ h3 {
 	margin: 1em 0
 }
 
-h4 {
-	font-size: 1em;
-	margin: 1.33em 0
-}
-
-h5 {
-	font-size: 0.83em;
-	margin: 1.67em 0
-}
-
-h6 {
-	font-size: 0.67em;
-	margin: 2.33em 0
-}
-
-b, strong {
+b {
 	font-weight: bold
 }
 
-hr {
-	box-sizing: content-box;
-	height: 0
-}
-
-p, pre {
+p {
 	margin: 1em 0
-}
-
-dl, menu, ol, ul {
-	margin: 1em 0
-}
-
-menu, ol, ul {
-	padding: 0 0 0 40px
-}
-
-nav ul, nav ol {
-	list-style: none;
-	list-style-image: none
 }
 
 img {
@@ -111,7 +78,7 @@ table {
 	border-spacing: 0
 }
 
-html, button, input, select, textarea {
+html {
 	color: #222
 }
 
@@ -123,15 +90,6 @@ body {
 ::selection {
 	background: #b3d4fc;
 	text-shadow: none
-}
-
-hr {
-	display: block;
-	height: 1px;
-	border: 0;
-	border-top: 1px solid #ccc;
-	margin: 1em 0;
-	padding: 0
 }
 
 img {
@@ -148,10 +106,6 @@ img {
 
 .size-6 {
 	width: 50%
-}
-
-.clear {
-	clear: both
 }
 
 @media only screen and (max-width: 711px) {
