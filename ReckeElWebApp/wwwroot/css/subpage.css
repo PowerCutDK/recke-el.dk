@@ -113,10 +113,16 @@
 header {
 	height: 165px;
 	overflow: hidden;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	z-index: 999996;
 	width: 100%;
+}
+
+@media (min-width: 860px) {
+	header {
+		position: fixed;
+	}
 }
 
 .header-background {
