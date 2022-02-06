@@ -91,24 +91,12 @@ resizePage();
 $(window).resize(resizePage);
 
 function resizePage() {
-	const mobileWidth = 860;
 	const minWidth = 1675;
 
 	let width = window.innerWidth; // Including scrollbar (on desktop typically 17px)
 	let height = window.innerHeight;
 
 	$(".info").text(width);
-
-	if (width < 1060) {
-		$("#header-nav").css("top", (width / 10 + 28) + "px");
-	}
-
-	if (width < mobileWidth) {
-		$("#header-nav").css("position", "absolute");
-	}
-	else {
-		$("#header-nav").css("position", "fixed");
-	}
 
 	$("#MenuBackgroundLeftInner").html(navSideHtml);
 
@@ -194,7 +182,7 @@ function setMenuSelected() {
 
 	$("#MenuBackgroundLeftInner").find("[id='" + urlName + "']").addClass("menuSelected");
 	$("#menu2").find("[id='" + urlName + "']").addClass("menuSelected");
-	$(".nav-main").find("[id='" + urlName + "']").addClass("nav-main-Selected");
+	$(`.header-nav #${urlName.toLowerCase()}`).addClass("selected");
 }
 
 
