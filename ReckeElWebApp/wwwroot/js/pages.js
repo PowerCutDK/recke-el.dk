@@ -100,11 +100,7 @@ function resizePage() {
 	$(".info").text(width);
 
 	if (width < 1060) {
-		//$(".header-text").hide();
 		$("#header-nav").css("top", (width / 10 + 28) + "px");
-	}
-	else {
-		//$(".header-text").show();
 	}
 
 	if (width < mobileWidth) {
