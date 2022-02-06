@@ -347,7 +347,7 @@ a.selected {
 	margin-top: 45px;
 }
 
-.container .column, .container .columns {
+.container .columns {
 	max-width: 100%;
 }
 
