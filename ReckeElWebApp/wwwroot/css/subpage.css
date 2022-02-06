@@ -142,7 +142,6 @@ header {
 .header-logo img {
 	margin: auto;
 	display: block;
-	width: calc(100% - 200px + 17px);
 	max-width: 100%;
 }
 
@@ -150,9 +149,11 @@ header {
 	.header-logo {
 		width: 70%;
 	}
+}
 
+@media (max-width: 1060px) {
 		.header-logo img {
-			width: initial;
+		width: calc(100% - 200px + 17px);
 		}
 }
 
