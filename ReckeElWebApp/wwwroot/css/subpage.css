@@ -151,27 +151,29 @@ header {
 	}
 }
 
-@media (max-width: 1060px) {
-		.header-logo img {
-		width: calc(100% - 200px + 17px);
-		}
-}
-
 .header-text {
-	background-color: Transparent;
-	height: 160px;
-	overflow: hidden;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	right: 10px;
-	z-index: 999997;
 	opacity: 0.8;
-	text-align: right;
 	font-family: Arial;
 	color: black;
 	font-weight: bold;
 	text-transform: uppercase;
 	user-select: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+@media (max-width: 1060px) {
+	.header-logo img {
+		width: calc(100% - 200px + 17px);
+	}
+
+	.header-text {
+		display: none;
+	}
 }
 
 	.header-text a, .header-text a:visited, .header-text a:hover, .header-text a:focus {
