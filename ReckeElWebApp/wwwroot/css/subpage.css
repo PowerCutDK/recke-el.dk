@@ -132,7 +132,7 @@ header {
 }
 
 .header-logo {
-	width: 70%;
+	width: 100%;
 	position: absolute;
 	opacity: 0.8;
 	top: 23px;
@@ -142,7 +142,18 @@ header {
 .header-logo img {
 	margin: auto;
 	display: block;
+	width: calc(100% - 200px + 17px);
 	max-width: 100%;
+}
+
+@media (min-width: 1060px) {
+	.header-logo {
+		width: 70%;
+	}
+
+		.header-logo img {
+			width: initial;
+		}
 }
 
 .header-text {

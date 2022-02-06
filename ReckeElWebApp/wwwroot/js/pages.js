@@ -101,14 +101,10 @@ function resizePage() {
 
 	if (width < 1060) {
 		$(".header-text").hide();
-		$(".header-logo").css("width", "100%");
-		$("#header-logo").css("width", (width - 200) + "px");
 		$("#header-nav").css("top", (width / 10 + 28) + "px");
 	}
 	else {
 		$(".header-text").show();
-		$(".header-logo").css("width", "70%");
-		$("#header-logo").css("max-width", "100%");
 	}
 
 	if (width < mobileWidth) {
