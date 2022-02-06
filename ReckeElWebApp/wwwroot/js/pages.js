@@ -111,12 +111,12 @@ function resizePage() {
 
 	if (width < mobileWidth) {
 		$(".header-logo").css("position", "absolute");
-		$(".header").css("position", "absolute");
+		$("header").css("position", "absolute");
 		$("#header-nav").css("position", "absolute");
 	}
 	else {
 		$(".header-logo").css("position", "fixed");
-		$(".header").css("position", "fixed");
+		$("header").css("position", "fixed");
 		$("#header-nav").css("position", "fixed");
 	}
 
