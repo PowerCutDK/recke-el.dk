@@ -70,11 +70,13 @@ h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 	font-size: 2em;
+	color: White;
 }
 
 h2 {
 	font-size: 1.5em;
-	margin: 0.83em 0
+	margin: 0.83em 0;
+	color: black;
 }
 
 h3 {
@@ -275,7 +277,14 @@ a[href^=tel] {
 .header {
 	font-family: "Open Sans",Sans-serif;
 	color: #000;
-	margin-bottom: 1.15em
+	margin-bottom: 1.15em;
+	background-color: Transparent;
+	height: auto;
+	overflow: hidden;
+	position: fixed;
+	top: 0px;
+	z-index: 250;
+	width: 100%;
 }
 
 .cms-logo img {
@@ -558,14 +567,6 @@ body {
 	font-family: Arial,sans-serif;
 }
 
-h1 {
-	color: White;
-}
-
-h2 {
-	color: black;
-}
-
 .header-text {
 	background-color: Transparent;
 	height: 160px;
@@ -608,17 +609,6 @@ h2 {
 	top: 0px;
 	z-index: 250;
 	opacity: 0.8;
-}
-
-.header {
-	background-color: Transparent;
-	height: 160px;
-	height: auto;
-	overflow: hidden;
-	position: fixed;
-	top: 0px;
-	z-index: 250;
-	width: 100%;
 }
 
 #topBG {
