@@ -140,33 +140,38 @@
 	top: 0px;
 	right: 10px;
 	z-index: 999997;
-	width: 100%;
 	opacity: 0.8;
 	text-align: right;
+	font-family: Arial;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+	user-select: none;
 }
 
-.line-1 {
-	font-family: Arial;
-	color: Black;
-	font-size: 30px;
-	font-weight: bold;
-	padding-bottom: 5px;
-	padding-top: 5px;
-}
+	.header-text a, .header-text a:visited, .header-text a:hover, .header-text a:focus {
+		color: inherit;
+		/*text-decoration: inherit;*/
+	}
 
-.line-2 {
-	font-family: Arial;
-	color: Black;
-	font-size: 27px;
-	font-weight: bold;
-}
+	.header-text .line-1 {
+		font-size: 30px;
+		padding-bottom: 5px;
+		padding-top: 5px;
+	}
 
-.line-3 {
-	font-family: Arial;
-	color: Black;
-	font-size: 21px;
-	font-weight: bold;
-}
+	.header-text .line-2 {
+		font-size: 27px;
+	}
+
+	.header-text .line-3 {
+		font-size: 21px;
+	}
+
+	.header-text .line-4 {
+		font-size: 21px;
+		text-transform: none; /*Stay lowercase*/
+	}
 
 #header-nav {
 	z-index: 999999;
