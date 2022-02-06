@@ -94,8 +94,10 @@ function resizePage() {
 	const mobileWidth = 860;
 	const minWidth = 1675;
 
-	let width = window.innerWidth;
+	let width = window.innerWidth; // Including scrollbar (on desktop typically 17px)
 	let height = window.innerHeight;
+
+	$(".info").text(width);
 
 	if (width < 1060) {
 		$(".header-text").hide();

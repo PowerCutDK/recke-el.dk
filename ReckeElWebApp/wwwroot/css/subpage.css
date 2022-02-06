@@ -256,3 +256,8 @@ footer {
 		border-left: 1px solid #e6e6e6;
 	}
 }
+
+.info {
+	position: fixed;
+	z-index: 2147483647;
+}
