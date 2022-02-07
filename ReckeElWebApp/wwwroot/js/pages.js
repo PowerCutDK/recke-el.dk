@@ -97,11 +97,9 @@ function resizePage() {
 
 	if (height < 700) {
 		$("#menu2").hide();
-		$("#MenuBackgroundLeft").css("position", "absolute");
 		$("nav.left-nav").css("position", "absolute");
 	}
 	else {
-		$("#MenuBackgroundLeft").css("position", "fixed");
 		$("nav.left-nav").css("position", "fixed");
 		$("#menu2").show();
 	}
