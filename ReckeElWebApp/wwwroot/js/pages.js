@@ -62,15 +62,15 @@ function resizePage() {
 	$(".info").text(width);
 
 	if (width > minWidth) {
-		$("#MenuBackgroundLeftInner").show();
+		$("nav.left-nav").show();
 		$(".menuLeft").css("width", "340px");
 		$(".menu-text").show();
-		$("#MenuBackgroundLeftInner").css("width", "340px");
+		$("nav.left-nav").css("width", "340px");
 		$("#menu2").html("");
 		createMenu();
 	}
 	else if (width > (minWidth - 475)) {
-		$("#MenuBackgroundLeftInner").show();
+		$("nav.left-nav").show();
 		$(".menuLeft").css("width", "115px");
 		$("#menu2").html("");
 		createMenu();
@@ -78,7 +78,7 @@ function resizePage() {
 		$(".menu-text").hide();
 	}
 	else {
-		$("#MenuBackgroundLeftInner").hide();
+		$("nav.left-nav").hide();
 		$("#menu2").html(navTwoColumnHtml);
 
 		$(".menuLeft").css("width", "340px");
@@ -98,11 +98,11 @@ function resizePage() {
 	if (height < 700) {
 		$("#menu2").hide();
 		$("#MenuBackgroundLeft").css("position", "absolute");
-		$("#MenuBackgroundLeftInner").css("position", "absolute");
+		$("nav.left-nav").css("position", "absolute");
 	}
 	else {
 		$("#MenuBackgroundLeft").css("position", "fixed");
-		$("#MenuBackgroundLeftInner").css("position", "fixed");
+		$("nav.left-nav").css("position", "fixed");
 		$("#menu2").show();
 	}
 
@@ -117,8 +117,8 @@ function resizePage() {
 
 function createMenu() {
 	$(".menuLeft").mouseover(() => {
-		$("#MenuBackgroundLeftInner").css("width", "350px");
-		$("#MenuBackgroundLeftInner").show();
+		$("nav.left-nav").css("width", "350px");
+		$("nav.left-nav").show();
 		$(".menu-text").show();
 		$(".menuLeft").css("width", "340px");
 		removeMenu();
@@ -128,7 +128,7 @@ function createMenu() {
 
 function removeMenu() {
 	$(".bg").mouseenter(() => {
-		$("#MenuBackgroundLeftInner").css("width", "50px");
+		$("nav.left-nav").css("width", "50px");
 		$(".menuLeft").css("width", "115px");
 		resizePage();
 	});
@@ -139,7 +139,7 @@ function setMenuSelected() {
 	let arrr = arr[arr.length - 1].split(".");
 	let urlName = arrr[0];
 
-	$(`#MenuBackgroundLeftInner #${urlName.toLowerCase()}`).addClass("menuSelected");
+	$(`nav.left-nav #${urlName.toLowerCase()}`).addClass("menuSelected");
 	$("#menu2").find("[id='" + urlName + "']").addClass("menuSelected");
 	$(`.header-nav #${urlName.toLowerCase()}`).addClass("selected");
 }

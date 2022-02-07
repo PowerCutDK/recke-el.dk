@@ -63,7 +63,7 @@
 	height: 0px;
 }
 
-#MenuBackgroundLeftInner {
+nav.left-nav {
 	height: 100%;
 	z-index: 999996;
 	opacity: 1;
