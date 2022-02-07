@@ -1,44 +1,5 @@
 //////// Variables ////////
 
-const navSideHtml = `
-	<a id="el_installation" class="menuLeft" href="elinstallation">
-		<img src="/images/elinstallation.jpg" class="produkt-image">
-		<h5 class="menu-text">El Installation</h5>
-	</a>
-	<a id="Landbrug" class="menuLeft" href="landbrug">
-		<img src="/images/Landbrug.jpg" class="produkt-image">
-		<h5 class="menu-text">Landbrug</h5>
-	</a>
-	<a id="Industri" class="menuLeft" href="industri">
-		<img src="/images/industri.jpg" class="produkt-image">
-		<h5 class="menu-text">Industri</h5>
-	</a>
-	<a id="belysning" class="menuLeft" href="belysning">
-		<img src="/images/belysning.jpg" class="produkt-image">
-		<h5 class="menu-text">Belysning</h5>
-	</a>
-	<a id="Energioptimering" class="menuLeft" href="energioptimering">
-		<img src="/images/energioptimering.jpg" class="produkt-image">
-		<h5 class="menu-text">Energioptimering</h5>
-	</a>
-	<a id="Eleftersyn" class="menuLeft" href="eleftersyn">
-		<img src="/images/elsyn.jpg" class="produkt-image">
-		<h5 class="menu-text">Eleftersyn</h5>
-	</a>
-	<a id="it_data" class="menuLeft" href="it-data">
-		<img src="/images/it-data.jpg" class="produkt-image">
-		<h5 class="menu-text">Tele IT & Netværk</h5>
-	</a>
-	<a id="hvidevarer" class="menuLeft" href="hvidevarer">
-		<img src="/images/hvidevarer.jpg" class="produkt-image">
-		<h5 class="menu-text">Hvidevarer</h5>
-	</a>
-	<a id="butik" class="menuLeft" href="butik">
-		<img src="/images/butik.jpg" class="produkt-image">
-		<h5 class="menu-text">Butik</h5>
-	</a>
-	`;
-
 const navTwoColumnHtml = `
 	<br /><br /><br />
 	<div class="eight columns">
@@ -88,6 +49,8 @@ const navTwoColumnHtml = `
 
 resizePage();
 
+setMenuSelected();
+
 $(window).resize(resizePage);
 
 function resizePage() {
@@ -97,8 +60,6 @@ function resizePage() {
 	let height = window.innerHeight;
 
 	$(".info").text(width);
-
-	$("#MenuBackgroundLeftInner").html(navSideHtml);
 
 	if (width > minWidth) {
 		$("#MenuBackgroundLeftInner").show();
@@ -152,8 +113,6 @@ function resizePage() {
 			$(".menuItem").css("color", "white");
 		})
 	});
-
-	setMenuSelected();
 };
 
 function createMenu() {
@@ -180,7 +139,7 @@ function setMenuSelected() {
 	let arrr = arr[arr.length - 1].split(".");
 	let urlName = arrr[0];
 
-	$("#MenuBackgroundLeftInner").find("[id='" + urlName + "']").addClass("menuSelected");
+	$(`#MenuBackgroundLeftInner #${urlName.toLowerCase()}`).addClass("menuSelected");
 	$("#menu2").find("[id='" + urlName + "']").addClass("menuSelected");
 	$(`.header-nav #${urlName.toLowerCase()}`).addClass("selected");
 }
