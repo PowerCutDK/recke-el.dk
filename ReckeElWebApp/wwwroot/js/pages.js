@@ -66,20 +66,20 @@ function resizePage() {
 		$(".menuLeft").css("width", "340px");
 		$(".menu-text").show();
 		$("nav.left-nav").css("width", "340px");
-		$("#menu2").html("");
+		$("#nav-center").html("");
 		createMenu();
 	}
 	else if (width > (minWidth - 475)) {
 		$("nav.left-nav").show();
 		$(".menuLeft").css("width", "115px");
-		$("#menu2").html("");
+		$("#nav-center").html("");
 		createMenu();
 
 		$(".menu-text").hide();
 	}
 	else {
 		$("nav.left-nav").hide();
-		$("#menu2").html(navTwoColumnHtml);
+		$("#nav-center").html(navTwoColumnHtml);
 
 		$(".menuLeft").css("width", "340px");
 		$(".produkt-image").css("width", "75px");
@@ -96,12 +96,12 @@ function resizePage() {
 	}
 
 	if (height < 700) {
-		$("#menu2").hide();
+		$("#nav-center").hide();
 		$("nav.left-nav").css("position", "absolute");
 	}
 	else {
 		$("nav.left-nav").css("position", "fixed");
-		$("#menu2").show();
+		$("#nav-center").show();
 	}
 
 	$(".menuItem").mouseover(() => {
@@ -138,7 +138,7 @@ function setMenuSelected() {
 	let urlName = arrr[0];
 
 	$(`nav.left-nav #${urlName.toLowerCase()}`).addClass("menuSelected");
-	$("#menu2").find("[id='" + urlName + "']").addClass("menuSelected");
+	$("#nav-center").find("[id='" + urlName + "']").addClass("menuSelected");
 	$(`.header-nav #${urlName.toLowerCase()}`).addClass("selected");
 }
 
