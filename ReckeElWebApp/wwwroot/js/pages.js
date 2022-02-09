@@ -62,15 +62,15 @@ function resizePage() {
 	$(".info").text(width);
 
 	if (width > minWidth) {
-		$("nav.left-nav").show();
+		$("nav.nav-left").show();
 		$(".menuLeft").css("width", "340px");
 		$(".menu-text").show();
-		$("nav.left-nav").css("width", "340px");
+		$("nav.nav-left").css("width", "340px");
 		$("#nav-center").html("");
 		createMenu();
 	}
 	else if (width > (minWidth - 475)) {
-		$("nav.left-nav").show();
+		$("nav.nav-left").show();
 		$(".menuLeft").css("width", "115px");
 		$("#nav-center").html("");
 		createMenu();
@@ -78,7 +78,7 @@ function resizePage() {
 		$(".menu-text").hide();
 	}
 	else {
-		$("nav.left-nav").hide();
+		$("nav.nav-left").hide();
 		$("#nav-center").html(navTwoColumnHtml);
 
 		$(".menuLeft").css("width", "340px");
@@ -97,10 +97,10 @@ function resizePage() {
 
 	if (height < 700) {
 		$("#nav-center").hide();
-		$("nav.left-nav").css("position", "absolute");
+		$("nav.nav-left").css("position", "absolute");
 	}
 	else {
-		$("nav.left-nav").css("position", "fixed");
+		$("nav.nav-left").css("position", "fixed");
 		$("#nav-center").show();
 	}
 
@@ -115,8 +115,8 @@ function resizePage() {
 
 function createMenu() {
 	$(".menuLeft").mouseover(() => {
-		$("nav.left-nav").css("width", "350px");
-		$("nav.left-nav").show();
+		$("nav.nav-left").css("width", "350px");
+		$("nav.nav-left").show();
 		$(".menu-text").show();
 		$(".menuLeft").css("width", "340px");
 		removeMenu();
@@ -126,7 +126,7 @@ function createMenu() {
 
 function removeMenu() {
 	$(".bg").mouseenter(() => {
-		$("nav.left-nav").css("width", "50px");
+		$("nav.nav-left").css("width", "50px");
 		$(".menuLeft").css("width", "115px");
 		resizePage();
 	});
@@ -137,7 +137,7 @@ function setMenuSelected() {
 	let arrr = arr[arr.length - 1].split(".");
 	let urlName = arrr[0];
 
-	$(`nav.left-nav #${urlName.toLowerCase()}`).addClass("menuSelected");
+	$(`nav.nav-left #${urlName.toLowerCase()}`).addClass("menuSelected");
 	$("#nav-center").find("[id='" + urlName + "']").addClass("menuSelected");
 	$(`.header-nav #${urlName.toLowerCase()}`).addClass("selected");
 }
