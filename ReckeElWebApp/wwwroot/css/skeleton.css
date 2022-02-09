@@ -101,16 +101,5 @@
       clear: both; }
     .row {
       zoom: 1; }
-
-    /* You can also use a <br class="clear" /> to clear columns */
-    .clear {
-      clear: both;
-      display: block;
-      overflow: hidden;
-      visibility: hidden;
-      width: 0;
-      height: 0;
-    }
-	
 	
 	.columns{text-align:left;}
