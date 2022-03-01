@@ -46,6 +46,7 @@ const navTwoColumnHtml = `
 	`;
 
 
+$(".nav-center").html(navTwoColumnHtml);
 
 resizePage();
 
@@ -58,28 +59,27 @@ function resizePage() {
 
 	let width = window.innerWidth; // Including scrollbar (on desktop typically 17px)
 	let height = window.innerHeight;
+	let showNavLeft = false;
+	let showNavCenter = false;
 
 	$(".info").text(width);
 
 	if (width > minWidth) {
-		$("nav.nav-left").show();
-		$(".menuLeft").css("width", "340px");
-		$(".menu-text").show();
+		showNavLeft = true;
+		$(".nav-left .menuLeft").css("width", "340px");
+		$(".nav-left .menu-text").show();
 		$("nav.nav-left").css("width", "340px");
-		$(".nav-center").html("");
 		createMenu();
 	}
 	else if (width > (minWidth - 475)) {
-		$("nav.nav-left").show();
-		$(".menuLeft").css("width", "115px");
-		$(".nav-center").html("");
+		showNavLeft = true;
+		$(".nav-left .menuLeft").css("width", "115px");
 		createMenu();
 
-		$(".menu-text").hide();
+		$(".nav-left .menu-text").hide();
 	}
 	else {
-		$("nav.nav-left").hide();
-		$(".nav-center").html(navTwoColumnHtml);
+		showNavCenter = true;
 
 		$(".menuLeft").css("width", "340px");
 		$(".produkt-image").css("width", "75px");
@@ -96,13 +96,15 @@ function resizePage() {
 	}
 
 	if (height < 700) {
-		$(".nav-center").hide();
+		showNavCenter = false;
 		$("nav.nav-left").css("position", "absolute");
 	}
 	else {
 		$("nav.nav-left").css("position", "fixed");
-		$(".nav-center").show();
 	}
+
+	$(".nav-center").toggle(showNavCenter);
+	$("nav.nav-left").toggle(!showNavCenter);
 
 	$(".menuItem").mouseover(() => {
 		$(this).css("background", "rgb(88, 60, 54)");
@@ -114,13 +116,13 @@ function resizePage() {
 };
 
 function createMenu() {
-	$(".menuLeft").mouseover(() => {
+	$(".nav-left .menuLeft").mouseover(() => {
 		$("nav.nav-left").css("width", "350px");
 		$("nav.nav-left").show();
 		$(".menu-text").show();
 		$(".menuLeft").css("width", "340px");
 		removeMenu();
-		$(".menuLeft").unbind("mouseover");
+		$(".nav-left .menuLeft").unbind("mouseover");
 	});
 }
 
