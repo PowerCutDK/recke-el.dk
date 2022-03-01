@@ -59,20 +59,17 @@ function resizePage() {
 
 	let width = window.innerWidth; // Including scrollbar (on desktop typically 17px)
 	let height = window.innerHeight;
-	let showNavLeft = false;
 	let showNavCenter = false;
 
 	$(".info").text(width);
 
 	if (width > minWidth) {
-		showNavLeft = true;
 		$(".nav-left .menuLeft").css("width", "340px");
 		$(".nav-left .menu-text").show();
 		$("nav.nav-left").css("width", "340px");
 		createMenu();
 	}
 	else if (width > (minWidth - 475)) {
-		showNavLeft = true;
 		$(".nav-left .menuLeft").css("width", "115px");
 		createMenu();
 
