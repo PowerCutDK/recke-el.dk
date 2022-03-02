@@ -245,9 +245,12 @@ header {
 	}
 }
 
-/*.nav-center {*/
 .nav-container {
 	padding-top: 115px;
+}
+
+.nav-center {
+	padding-top: 69px;
 }
 
 
