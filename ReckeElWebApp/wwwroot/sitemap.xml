@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.recke-el.dk</loc>
+    <loc>https://recke-el.dk</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/elinstallation.html</loc>
+    <loc>https://recke-el.dk/sider/elinstallation</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/landbrug.html</loc>
+    <loc>https://recke-el.dk/sider/landbrug></loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/industri.html</loc>
+    <loc>https://recke-el.dk/sider/industri</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/belysning.html</loc>
+    <loc>https://recke-el.dk/sider/belysning</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/energioptimering.html</loc>
+    <loc>https://recke-el.dk/sider/energioptimering</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/eleftersyn.html</loc>
+    <loc>https://recke-el.dk/sider/eleftersyn</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/it-data.html</loc>
+    <loc>https://recke-el.dk/sider/it-data</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/hvidevarer.html</loc>
+    <loc>https://recke-el.dk/sider/hvidevarer</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/butik.html</loc>
+    <loc>https://recke-el.dk/sider/butik</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/om.html</loc>
+    <loc>https://recke-el.dk/sider/om</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/led.html</loc>
+    <loc>https://recke-el.dk/sider/led</loc>
     <priority>0.5000</priority>
   </url>
   <url>
-    <loc>https://www.recke-el.dk/sider/kontakt.html</loc>
+    <loc>https://recke-el.dk/sider/kontakt</loc>
     <priority>0.5000</priority>
   </url> 
 </urlset>
