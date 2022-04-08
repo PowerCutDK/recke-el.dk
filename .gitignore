@@ -1,8 +1,10 @@
 .vs/
-.vscode/
 [Bb]in/
 [Oo]bj/
 *.suo
 *.user
-
 *.log
+dotnet-tools.json
+
+.vscode/
+
