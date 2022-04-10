@@ -11,6 +11,52 @@
 	<meta name="description" content="Vi er en profesionel elektriker og el-installatør virksomhed som servicerer både industri, boligforeninger og private i Stenstrup Svendborg, Kverndrup, Kirkeby">
 	<title>Recke EL - El Installatør - i Stenstrup</title>
 	<link rel="stylesheet" href="~/css/main.css">
+	<script type="application/ld+json">
+		{
+			"@@context": "https://schema.org",
+			"@@type": "Electrician",
+			@* "image": ["https://example.com/photos/1x1/photo.jpg"], *@
+			"name": "Recke-EL",
+			"address": {
+				"@@type": "PostalAddress",
+				"streetAddress": "Stationsvej 54",
+				"addressLocality": "Stenstrup",
+				"postalCode": "5771",
+				"addressCountry": "DK"
+			},
+			"geo": {
+				"@@type": "GeoCoordinates",
+				"latitude": 55.132062,
+				"longitude": 10.507188
+			},
+			"url": "https://recke-el.dk",
+			"telephone": "+4562261018",
+			"openingHoursSpecification": [
+				{
+					"@@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday"
+					],
+					"opens": "09:00",
+					"closes": "11:00"
+				},
+				{
+					"@@type": "OpeningHoursSpecification",
+					"dayOfWeek": [
+						"Monday",
+						"Tuesday",
+						"Wednesday",
+						"Thursday"
+					],
+					"opens": "16:00",
+					"closes": "17:00"
+				}
+			]
+		}
+	</script>
 </head>
 <body class="custom-color-orange">
 
@@ -132,7 +178,7 @@
 							</div>
 						</a>
 
-						<a id="link_1" class="section-box"  href="https://www.elsalg.dk/">
+						<a id="link_1" class="section-box" href="https://www.elsalg.dk/">
 							<div class="section-box__image-wrapper">
 								<img alt="Talevarsling til private og erhverv" src="~/images/butik.jpg" width="295" height="140" class="b-lazy b-loaded">
 							</div>
