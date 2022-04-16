@@ -335,6 +335,7 @@ footer {
 	position: relative;
 	z-index: 10;
 	box-shadow: 3px 3px 5px rgba(0,0,0, 0.2);
+	overflow: hidden;
 }
 
 	.section-box:after {
@@ -355,17 +356,13 @@ footer {
 		text-decoration: none
 	}
 
-.section-box__image-wrapper {
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	background-color: #fff;
-	overflow: hidden;
-	height: 140px
-}
 
-	.section-box__image-wrapper img {
-		width: 100%
-	}
+.main-nav img {
+	object-fit: cover;
+	overflow: hidden;
+	height: 140px;
+	width: 100%;
+}
 
 .section-box__header {
 	border-bottom-left-radius: 10px;
