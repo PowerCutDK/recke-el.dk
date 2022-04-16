@@ -426,17 +426,6 @@ footer {
 	background: #003875;
 }
 
-.b-lazy {
-	-webkit-transition: opacity 500ms ease-in-out;
-	transition: opacity 500ms ease-in-out;
-	max-width: 100%;
-	opacity: 0;
-}
-
-	.b-lazy.b-loaded {
-		opacity: 1;
-	}
-
 @media (min-width: 44.58125em) {
 	.header {
 		height: 165px;
