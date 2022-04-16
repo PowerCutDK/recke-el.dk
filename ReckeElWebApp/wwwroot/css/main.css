@@ -333,7 +333,8 @@ footer {
 	border-radius: 10px;
 	margin-bottom: 2em;
 	position: relative;
-	z-index: 10
+	z-index: 10;
+	box-shadow: 3px 3px 5px rgba(0,0,0, 0.2);
 }
 
 	.section-box:after {
@@ -353,11 +354,6 @@ footer {
 	.section-box:hover {
 		text-decoration: none
 	}
-
-		.section-box:hover .section-box__shadow {
-			opacity: 1;
-			background: transparent;
-		}
 
 .section-box__image-wrapper {
 	border-top-left-radius: 10px;
@@ -392,20 +388,6 @@ footer {
 	min-height: 36px;
 	overflow: hidden
 }
-
-.section-box__shadow {
-	opacity: 0.75;
-	background: transparent;
-	position: absolute;
-	z-index: -1;
-	width: 110%;
-	left: -5%;
-	bottom: -1em
-}
-
-	.section-box__shadow img {
-		width: 100%
-	}
 
 .statement {
 	*zoom: 1;
@@ -518,10 +500,6 @@ footer {
 		line-height: 1.4em;
 		height: 2.8em;
 		margin: 0 1em 0 0
-	}
-
-	.section-box__shadow {
-		bottom: -20px
 	}
 }
 
