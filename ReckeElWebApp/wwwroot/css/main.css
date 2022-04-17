@@ -357,6 +357,11 @@ footer {
 	}
 
 
+.main-nav a {
+	display: flex;
+	flex-direction: column;
+}
+
 .main-nav img {
 	object-fit: cover;
 	overflow: hidden;
@@ -364,26 +369,28 @@ footer {
 	width: 100%;
 }
 
-.section-box__header {
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+@media (max-width: 44.45em) {
+	.main-nav a {
+		flex-direction: row;
+		align-items: center;
+	}
+
+	.main-nav img {
+		width: 73px;
+	}
+
+	
+}
+
+.main-nav a div {
 	font-family: "arial";
 	font-size: 20px;
 	font-weight: 300;
-	background-image: url('/images/mand.png');
-	background-repeat: no-repeat;
-	background-position: right center;
 	color: #036;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 	text-transform: uppercase;
-	line-height: 22px;
-	margin: 0 1em 0.4em 0;
-	padding-top: 0.6em;
-	padding-right: 2em;
-	padding-bottom: 0.6em;
-	padding-left: 20px;
-	max-height: 60px;
-	min-height: 36px;
-	overflow: hidden
+	padding: 6px 15px;
 }
 
 .statement {
@@ -468,35 +475,12 @@ footer {
 	.section-box {
 		width: 100%;
 		float: right;
-		margin-right: 0;
-		padding: 8px;
-		padding-right: 1em;
-		margin-bottom: 1.5em
+		margin-bottom: 9px;
 	}
 
-	.section-box__image-wrapper {
-		border-radius: 10px;
-		position: absolute;
+	.main-nav img {
 		height: 55px;
-		width: 73px
-	}
-
-		.section-box__image-wrapper img {
-			height: 55px
-		}
-
-	.section-box__header {
-		white-space: normal;
-		overflow: hidden;
-		text-overflow: ellipsis;
-		width: 100%;
-		background-color: transparent;
-		padding-left: 85px;
-		padding-top: 0;
-		padding-bottom: 0;
-		line-height: 1.4em;
-		height: 2.8em;
-		margin: 0 1em 0 0
+		width: 73px;
 	}
 }
 
